@@ -2,8 +2,11 @@
 Library    SeleniumLibrary
 
 *** Variables ***
+#Sample of Scalar Variables
 ${login_email}      testa@mailinator.com
 ${login_password}      Pass@123
+
+#List variables - can be also used to use multiple accounts 
 
 *** Keywords ***
 StartTest
