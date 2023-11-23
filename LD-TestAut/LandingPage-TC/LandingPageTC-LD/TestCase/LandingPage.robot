@@ -19,27 +19,20 @@ Verify Four Center Tiles
     [Tags]    functional
 
     CommonFunctionalities.PerformLoginProcess
-    Sleep    3s
     centerTiles.Click TournamentTile
-    Sleep    3s
     menuStrip.Click home
-    Sleep    3s
     centerTiles.Click WatchTile
-    Sleep    3s
     menuStrip.Click home
-    Sleep    3s
     centerTiles.Click ShopTile
-    Sleep    3s
     menuStrip.Click home
-    Sleep    3s
     centerTiles.Click Leaderboard
-    Sleep    3s
     menuStrip.Click home
      
 *** Keywords ***
 
 #current tutorial
-#Robot Framework Tutorial #10 - How to Create User Defined Keywords -Done
+#Robot Framework Tutorial #17 - How to Create User Defined Keywords -URL: https://www.youtube.com/watch?v=P8lpTs7j3Vw&list=PLL34mf651faORDOyJrk0E6k9FM-wKgfPV&index=17
+
 #python -m robot --outputdir C:\Users\Dynas\OneDrive\Desktop\LD-TestAut\LandingPage-TC\LandingPageTC-LD\TestCase\LandingPageLogs LandingPage.robot
 
 *** Comments ***
