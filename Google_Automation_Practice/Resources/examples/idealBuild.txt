@@ -1,0 +1,51 @@
+Ideal project resource build
+desc: this serves as a guide for building th project folder
+Folders:
+    Test Cases
+        testCase1
+    Results
+        testCase1_Logs
+    Resources
+        URLsDictionary (this contains all the url variables to be used for calling different env)
+        credentialsDictionary (contains credentials)
+        pageObjects (contains page objects)
+        setupTeardown (contains the setup and teardown commands)
+
+
+Sample syntax for environments
+
+===========Use dictionary variable to hold urls===========================
+this uses the "Dictionary Variable" 
+//code start//
+***Variables***
+&{url}  qa=https://www.qa.com   dev=https://www.dev.com     prod=https://www.prod.com
+//code ends//
+
+when calling the Dictionary Variable, you may use this:
+
+//code starts//
+***Keywords***
+Test Dictionary
+    Open Browser    ${url.qa}   chrome
+//code ends//
+
+===========================================================================
+
+===========Use dictionary variable and a variable to switch between environments
+first define the variable and dictionaery variable then implement it to the test case
+//code start//
+***Variables***
+${env}  dev
+&{url}  qa=https://www.qa.com   dev=https://www.dev.com     prod=https://www.prod.com
+
+
+***Test Case***
+Test Case
+    Open Browser    ${url.${env}}   chrome
+//code end//
+
+start to run the robot command but you will set the env to a new environment
+//execution start//
+robot -d results -v env:qa  testcase.robot
+//execution end//
+above execution will result to having the ${env} to have the value of qa

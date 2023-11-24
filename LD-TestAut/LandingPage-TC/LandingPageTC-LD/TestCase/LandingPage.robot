@@ -31,7 +31,7 @@ Verify Four Center Tiles
 *** Keywords ***
 
 #current tutorial
-#Robot Framework Tutorial #17 - How to Create User Defined Keywords -URL: https://www.youtube.com/watch?v=P8lpTs7j3Vw&list=PLL34mf651faORDOyJrk0E6k9FM-wKgfPV&index=17
+#Robot Framework Tutorial #21 - Refactor Selenium Webelement Locators -URL: https://www.youtube.com/watch?v=Uwxnnbdbyxc&list=PLL34mf651faORDOyJrk0E6k9FM-wKgfPV&index=21
 
 #python -m robot --outputdir C:\Users\Dynas\OneDrive\Desktop\LD-TestAut\LandingPage-TC\LandingPageTC-LD\TestCase\LandingPageLogs LandingPage.robot
 
