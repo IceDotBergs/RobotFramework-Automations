@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.11 on win32)" generated="20231212 18:24:34.594" rpa="false" schemaversion="4">
+<suite id="s1" name="IndividualAutomations" source="C:\Users\Dynas\OneDrive\Documents\GitHub\RobotFramework-Automations\Generic_Automations-DynastyGM\Testing\IndividualAutomations.robot">
+<test id="s1-t1" name="Verify Landing Page Accessability" line="12">
+<kw name="Test_Start" library="setup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${lpl_url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231212 18:24:34.861" level="INFO">Opening browser 'chrome' to base url 'https://dev.lpl.gg/home'.</msg>
+<status status="PASS" starttime="20231212 18:24:34.861" endtime="20231212 18:24:45.942"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231212 18:24:45.942" endtime="20231212 18:24:46.072"/>
+</kw>
+<status status="PASS" starttime="20231212 18:24:34.861" endtime="20231212 18:24:46.072"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231212 18:24:49.074" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231212 18:24:46.072" endtime="20231212 18:24:49.074"/>
+</kw>
+<status status="PASS" starttime="20231212 18:24:46.072" endtime="20231212 18:24:49.074"/>
+</kw>
+<kw name="Test_End" library="setup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20231212 18:24:49.074" endtime="20231212 18:24:55.325"/>
+</kw>
+<status status="PASS" starttime="20231212 18:24:49.074" endtime="20231212 18:24:55.325"/>
+</kw>
+<doc>This verifies the accessibility of the landing page</doc>
+<status status="PASS" starttime="20231212 18:24:34.861" endtime="20231212 18:24:55.325"/>
+</test>
+<status status="PASS" starttime="20231212 18:24:34.610" endtime="20231212 18:24:55.325"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="IndividualAutomations">IndividualAutomations</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

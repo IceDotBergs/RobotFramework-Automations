@@ -11,4 +11,4 @@ StartBrowser
     Maximize Browser Window
 
 CloseBrowser
-    Close All Browsers    
+    SeleniumLibrary.Close Browser  

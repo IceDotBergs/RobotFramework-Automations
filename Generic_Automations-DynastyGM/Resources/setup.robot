@@ -8,8 +8,11 @@ Resource    environment_url.robot
 
 *** Keywords ***
 Test_Start
-    Open Browser    ${browser.{env}}
+    Open Browser    ${lpl_url.${env}}    ${browser}
     Maximize Browser Window
 
 Test_End
     Close All Browsers
+
+WaitTimer
+    Sleep    3
