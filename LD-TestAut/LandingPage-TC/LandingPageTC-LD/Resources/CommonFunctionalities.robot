@@ -10,7 +10,7 @@ ${login_password}      Pass@123
 
 *** Keywords ***
 StartTest
-    Open Browser    https://dev.lightningdragongames.gg/home    chrome
+    Open Browser    https://dev.lightningdragon.gg/home    chrome
     Maximize Browser Window
     Sleep    2s
 

@@ -1,0 +1,12 @@
+Project Folder
+	Resources
+		urls
+		credentials
+		pageObjects
+		setupteardown
+	Test Cases
+		testcase1.file
+	Documentations
+	Results
+		testcase1_results
+	Data
