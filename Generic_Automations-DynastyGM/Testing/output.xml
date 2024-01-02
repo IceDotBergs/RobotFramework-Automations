@@ -1,41 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.10.11 on win32)" generated="20231212 18:24:34.594" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.10.11 on win32)" generated="20240102 08:23:02.685" rpa="false" schemaversion="4">
 <suite id="s1" name="IndividualAutomations" source="C:\Users\Dynas\OneDrive\Documents\GitHub\RobotFramework-Automations\Generic_Automations-DynastyGM\Testing\IndividualAutomations.robot">
-<test id="s1-t1" name="Verify Landing Page Accessability" line="12">
+<test id="s1-t1" name="Verify Login Page Accessability" line="13">
 <kw name="Test_Start" library="setup" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${lpl_url.${env}}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231212 18:24:34.861" level="INFO">Opening browser 'chrome' to base url 'https://dev.lpl.gg/home'.</msg>
-<status status="PASS" starttime="20231212 18:24:34.861" endtime="20231212 18:24:45.942"/>
+<msg timestamp="20240102 08:23:03.431" level="INFO">Opening browser 'chrome' to base url 'https://dev.lpl.gg/home'.</msg>
+<status status="PASS" starttime="20240102 08:23:03.430" endtime="20240102 08:23:16.536"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231212 18:24:45.942" endtime="20231212 18:24:46.072"/>
+<status status="PASS" starttime="20240102 08:23:16.536" endtime="20240102 08:23:16.662"/>
 </kw>
-<status status="PASS" starttime="20231212 18:24:34.861" endtime="20231212 18:24:46.072"/>
+<status status="PASS" starttime="20240102 08:23:03.429" endtime="20240102 08:23:16.662"/>
 </kw>
 <kw name="WaitTimer" library="setup">
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231212 18:24:49.074" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20231212 18:24:46.072" endtime="20231212 18:24:49.074"/>
+<msg timestamp="20240102 08:23:19.675" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240102 08:23:16.665" endtime="20240102 08:23:19.675"/>
 </kw>
-<status status="PASS" starttime="20231212 18:24:46.072" endtime="20231212 18:24:49.074"/>
+<status status="PASS" starttime="20240102 08:23:16.664" endtime="20240102 08:23:19.675"/>
+</kw>
+<kw name="Click Login button" library="PageObjects">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath=//a[contains(text(),'Log in')]</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240102 08:23:19.676" endtime="20240102 08:23:19.764"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=//a[contains(text(),'Log in')]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20240102 08:23:19.765" level="INFO">Clicking link 'xpath=//a[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20240102 08:23:19.764" endtime="20240102 08:23:19.800"/>
+</kw>
+<status status="PASS" starttime="20240102 08:23:19.676" endtime="20240102 08:23:19.800"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240102 08:23:22.806" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240102 08:23:19.801" endtime="20240102 08:23:22.806"/>
+</kw>
+<status status="PASS" starttime="20240102 08:23:19.801" endtime="20240102 08:23:22.806"/>
 </kw>
 <kw name="Test_End" library="setup" type="TEARDOWN">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20231212 18:24:49.074" endtime="20231212 18:24:55.325"/>
+<status status="PASS" starttime="20240102 08:23:22.807" endtime="20240102 08:23:29.037"/>
 </kw>
-<status status="PASS" starttime="20231212 18:24:49.074" endtime="20231212 18:24:55.325"/>
+<status status="PASS" starttime="20240102 08:23:22.807" endtime="20240102 08:23:29.037"/>
 </kw>
-<doc>This verifies the accessibility of the landing page</doc>
-<status status="PASS" starttime="20231212 18:24:34.861" endtime="20231212 18:24:55.325"/>
+<doc>This verifies the accessibility of the login page</doc>
+<status status="PASS" starttime="20240102 08:23:03.428" endtime="20240102 08:23:29.038"/>
 </test>
-<status status="PASS" starttime="20231212 18:24:34.610" endtime="20231212 18:24:55.325"/>
+<status status="PASS" starttime="20240102 08:23:02.686" endtime="20240102 08:23:29.039"/>
 </suite>
 <statistics>
 <total>
