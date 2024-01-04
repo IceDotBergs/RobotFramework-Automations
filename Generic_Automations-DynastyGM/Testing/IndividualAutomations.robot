@@ -10,9 +10,3 @@ Resource    ../Resources/PageObjects.robot
 Test Setup    setup.Test_Start
 Test Teardown    setup.Test_End
 *** Test Cases ***
-Perform Registration Procedure
-    [Documentation]    This test case performs the whole registration procedure and validation
-    setup.WaitTimer
-    PageObjects.Click Login button
-    setup.WaitTimer
-    PageObjects.Click RegisterUsername
