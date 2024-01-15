@@ -18,3 +18,9 @@
 ...    invalidemail2=email@.com    
 ...    invalidemail3=email@com    
 ...    validemail=testautomation@email.com
+
+#Login page credentials
+&{active_credentials}   
+...    validUsername=devmember3@mailinator.com    
+...    validPassword=Pass@123    
+...    invalidPassword=Pass@@123

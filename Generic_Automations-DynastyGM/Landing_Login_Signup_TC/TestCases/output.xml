@@ -1,31 +1,2718 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.10.11 on win32)" generated="20231219 10:45:44.739" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.10.11 on win32)" generated="20240115 14:47:50.604" rpa="false" schemaversion="4">
 <suite id="s1" name="Landing Login SignUp TestCases" source="C:\Users\Dynas\OneDrive\Documents\GitHub\RobotFramework-Automations\Generic_Automations-DynastyGM\Landing_Login_Signup_TC\TestCases\Landing_Login_SignUp_TestCases.robot">
-<test id="s1-t1" name="Verify Landing Page Accessability" line="12">
+<test id="s1-t1" name="Verify Landing Page Accessability" line="16">
+<kw name="Test_Start" library="setup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${lpl_url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240115 14:47:50.790" level="INFO">Opening browser 'chrome' to base url 'https://gg.letsplay.live/home'.</msg>
+<status status="PASS" starttime="20240115 14:47:50.790" endtime="20240115 14:47:59.574"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240115 14:47:59.574" endtime="20240115 14:47:59.713"/>
+</kw>
+<status status="PASS" starttime="20240115 14:47:50.790" endtime="20240115 14:47:59.713"/>
+</kw>
 <kw name="WaitTimer" library="setup">
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231219 10:45:48.809" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20231219 10:45:45.796" endtime="20231219 10:45:48.809"/>
+<msg timestamp="20240115 14:48:02.725" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:47:59.717" endtime="20240115 14:48:02.725"/>
 </kw>
-<status status="PASS" starttime="20231219 10:45:45.796" endtime="20231219 10:45:48.809"/>
+<status status="PASS" starttime="20240115 14:47:59.713" endtime="20240115 14:48:02.725"/>
+</kw>
+<kw name="Test_End" library="setup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240115 14:48:02.727" endtime="20240115 14:48:08.971"/>
+</kw>
+<status status="PASS" starttime="20240115 14:48:02.727" endtime="20240115 14:48:08.971"/>
 </kw>
 <doc>This verifies the accessibility of the landing page</doc>
-<status status="PASS" starttime="20231219 10:45:45.796" endtime="20231219 10:45:48.809"/>
+<status status="PASS" starttime="20240115 14:47:50.790" endtime="20240115 14:48:08.971"/>
 </test>
-<status status="PASS" starttime="20231219 10:45:44.739" endtime="20231219 10:45:48.809"/>
+<test id="s1-t2" name="Verify Login Page Accessability" line="21">
+<kw name="Test_Start" library="setup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${lpl_url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240115 14:48:08.975" level="INFO">Opening browser 'chrome' to base url 'https://gg.letsplay.live/home'.</msg>
+<status status="PASS" starttime="20240115 14:48:08.975" endtime="20240115 14:48:25.695"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240115 14:48:25.695" endtime="20240115 14:48:25.845"/>
+</kw>
+<status status="PASS" starttime="20240115 14:48:08.975" endtime="20240115 14:48:25.846"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:48:28.857" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:48:25.849" endtime="20240115 14:48:28.858"/>
+</kw>
+<status status="PASS" starttime="20240115 14:48:25.848" endtime="20240115 14:48:28.858"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${loginButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:48:28.861" level="INFO">Clicking element 'xpath=//a[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20240115 14:48:28.860" endtime="20240115 14:48:28.988"/>
+</kw>
+<status status="PASS" starttime="20240115 14:48:28.859" endtime="20240115 14:48:28.988"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:48:32.001" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:48:28.989" endtime="20240115 14:48:32.001"/>
+</kw>
+<status status="PASS" starttime="20240115 14:48:28.989" endtime="20240115 14:48:32.001"/>
+</kw>
+<kw name="Test_End" library="setup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240115 14:48:32.003" endtime="20240115 14:48:38.302"/>
+</kw>
+<status status="PASS" starttime="20240115 14:48:32.002" endtime="20240115 14:48:38.303"/>
+</kw>
+<doc>This verifies the accessibility of the login page</doc>
+<status status="PASS" starttime="20240115 14:48:08.975" endtime="20240115 14:48:38.303"/>
+</test>
+<test id="s1-t3" name="Perform Invalid credentials Login" line="27">
+<kw name="Test_Start" library="setup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${lpl_url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240115 14:48:38.310" level="INFO">Opening browser 'chrome' to base url 'https://gg.letsplay.live/home'.</msg>
+<status status="PASS" starttime="20240115 14:48:38.308" endtime="20240115 14:48:47.942"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240115 14:48:47.943" endtime="20240115 14:48:48.179"/>
+</kw>
+<status status="PASS" starttime="20240115 14:48:38.307" endtime="20240115 14:48:48.179"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${loginButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:48:48.182" level="INFO">Clicking element 'xpath=//a[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20240115 14:48:48.181" endtime="20240115 14:48:48.531"/>
+</kw>
+<status status="PASS" starttime="20240115 14:48:48.180" endtime="20240115 14:48:48.531"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:48:51.539" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:48:48.532" endtime="20240115 14:48:51.539"/>
+</kw>
+<status status="PASS" starttime="20240115 14:48:48.531" endtime="20240115 14:48:51.539"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${emailField}</arg>
+<arg>${active_credentials['validUsername']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:48:51.542" level="INFO">Typing text 'devmember3@mailinator.com' into text field 'xpath=//input[starts-with(@name,"email")]'.</msg>
+<status status="PASS" starttime="20240115 14:48:51.541" endtime="20240115 14:48:51.837"/>
+</kw>
+<status status="PASS" starttime="20240115 14:48:51.540" endtime="20240115 14:48:51.837"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${passwordField}</arg>
+<arg>${active_credentials['invalidPassword']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:48:51.841" level="INFO">Typing text 'Pass@@123' into text field 'xpath=//input[starts-with(@name, "password")]'.</msg>
+<status status="PASS" starttime="20240115 14:48:51.840" endtime="20240115 14:48:52.001"/>
+</kw>
+<status status="PASS" starttime="20240115 14:48:51.838" endtime="20240115 14:48:52.001"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:48:52.004" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:48:52.004" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:48:52.004" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:48:52.003" endtime="20240115 14:48:52.027"/>
+</kw>
+<status status="PASS" starttime="20240115 14:48:52.002" endtime="20240115 14:48:52.028"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${submitButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:48:52.031" level="INFO">Clicking element 'xpath=//button[starts-with(@type, "submit")]'.</msg>
+<status status="PASS" starttime="20240115 14:48:52.029" endtime="20240115 14:48:52.195"/>
+</kw>
+<status status="PASS" starttime="20240115 14:48:52.029" endtime="20240115 14:48:52.195"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${loginLabels['accountMismatch']}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:48:52.252" level="INFO">Current page contains text 'Incorrect email or password. Please try again.'.</msg>
+<status status="PASS" starttime="20240115 14:48:52.199" endtime="20240115 14:48:52.252"/>
+</kw>
+<status status="PASS" starttime="20240115 14:48:52.196" endtime="20240115 14:48:52.253"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:48:55.268" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:48:52.254" endtime="20240115 14:48:55.268"/>
+</kw>
+<status status="PASS" starttime="20240115 14:48:52.253" endtime="20240115 14:48:55.268"/>
+</kw>
+<kw name="Test_End" library="setup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240115 14:48:55.271" endtime="20240115 14:49:01.607"/>
+</kw>
+<status status="PASS" starttime="20240115 14:48:55.271" endtime="20240115 14:49:01.607"/>
+</kw>
+<doc>This is to verify that a user cannot login with invalid credentials</doc>
+<status status="PASS" starttime="20240115 14:48:38.306" endtime="20240115 14:49:01.609"/>
+</test>
+<test id="s1-t4" name="Perform Valid Credentials Login" line="38">
+<kw name="Test_Start" library="setup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${lpl_url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240115 14:49:01.615" level="INFO">Opening browser 'chrome' to base url 'https://gg.letsplay.live/home'.</msg>
+<status status="PASS" starttime="20240115 14:49:01.614" endtime="20240115 14:49:33.688"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240115 14:49:33.689" endtime="20240115 14:49:33.908"/>
+</kw>
+<status status="PASS" starttime="20240115 14:49:01.613" endtime="20240115 14:49:33.908"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${loginButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:49:33.910" level="INFO">Clicking element 'xpath=//a[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20240115 14:49:33.909" endtime="20240115 14:49:34.278"/>
+</kw>
+<status status="PASS" starttime="20240115 14:49:33.908" endtime="20240115 14:49:34.278"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:49:37.287" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:49:34.280" endtime="20240115 14:49:37.287"/>
+</kw>
+<status status="PASS" starttime="20240115 14:49:34.279" endtime="20240115 14:49:37.287"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${emailField}</arg>
+<arg>${active_credentials['validUsername']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:49:37.289" level="INFO">Typing text 'devmember3@mailinator.com' into text field 'xpath=//input[starts-with(@name,"email")]'.</msg>
+<status status="PASS" starttime="20240115 14:49:37.288" endtime="20240115 14:49:37.429"/>
+</kw>
+<status status="PASS" starttime="20240115 14:49:37.288" endtime="20240115 14:49:37.429"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${passwordField}</arg>
+<arg>${active_credentials['validPassword']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:49:37.431" level="INFO">Typing text 'Pass@123' into text field 'xpath=//input[starts-with(@name, "password")]'.</msg>
+<status status="PASS" starttime="20240115 14:49:37.431" endtime="20240115 14:49:37.533"/>
+</kw>
+<status status="PASS" starttime="20240115 14:49:37.430" endtime="20240115 14:49:37.534"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:49:37.543" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:49:37.543" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:49:37.543" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:49:37.541" endtime="20240115 14:49:37.605"/>
+</kw>
+<status status="PASS" starttime="20240115 14:49:37.536" endtime="20240115 14:49:37.605"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${submitButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:49:37.608" level="INFO">Clicking element 'xpath=//button[starts-with(@type, "submit")]'.</msg>
+<status status="PASS" starttime="20240115 14:49:37.607" endtime="20240115 14:49:37.718"/>
+</kw>
+<status status="PASS" starttime="20240115 14:49:37.606" endtime="20240115 14:49:37.718"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:49:40.732" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:49:37.723" endtime="20240115 14:49:40.732"/>
+</kw>
+<status status="PASS" starttime="20240115 14:49:37.722" endtime="20240115 14:49:40.732"/>
+</kw>
+<kw name="Verify PageNotContains" library="PageObjects">
+<arg>${submitButton}</arg>
+<kw name="Page Should Not Contain Button" library="SeleniumLibrary">
+<arg>${pageShouldNotContain}</arg>
+<doc>Verifies button ``locator`` is not found from current page.</doc>
+<msg timestamp="20240115 14:49:40.914" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240115 14:49:40.914" level="FAIL">Page should not have contained button 'xpath=//button[starts-with(@type, "submit")]'.</msg>
+<status status="FAIL" starttime="20240115 14:49:40.733" endtime="20240115 14:49:40.944"/>
+</kw>
+<status status="FAIL" starttime="20240115 14:49:40.733" endtime="20240115 14:49:40.945"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<status status="NOT RUN" starttime="20240115 14:49:40.946" endtime="20240115 14:49:40.946"/>
+</kw>
+<kw name="Test_End" library="setup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240115 14:49:40.947" endtime="20240115 14:49:47.245"/>
+</kw>
+<status status="PASS" starttime="20240115 14:49:40.946" endtime="20240115 14:49:47.245"/>
+</kw>
+<doc>This is to verify that a user is able to login with a valid credential</doc>
+<status status="FAIL" starttime="20240115 14:49:01.612" endtime="20240115 14:49:47.246">Page should not have contained button 'xpath=//button[starts-with(@type, "submit")]'.</status>
+</test>
+<test id="s1-t5" name="Verify Hyperlinks In Login Page" line="50">
+<kw name="Test_Start" library="setup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${lpl_url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240115 14:49:47.250" level="INFO">Opening browser 'chrome' to base url 'https://gg.letsplay.live/home'.</msg>
+<status status="PASS" starttime="20240115 14:49:47.249" endtime="20240115 14:49:55.120"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240115 14:49:55.121" endtime="20240115 14:49:55.241"/>
+</kw>
+<status status="PASS" starttime="20240115 14:49:47.249" endtime="20240115 14:49:55.242"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${loginButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:49:55.243" level="INFO">Clicking element 'xpath=//a[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20240115 14:49:55.243" endtime="20240115 14:49:55.626"/>
+</kw>
+<status status="PASS" starttime="20240115 14:49:55.242" endtime="20240115 14:49:55.627"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:49:58.642" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:49:55.629" endtime="20240115 14:49:58.642"/>
+</kw>
+<status status="PASS" starttime="20240115 14:49:55.628" endtime="20240115 14:49:58.642"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${forgotPasswordHyperlink}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:49:58.643" level="INFO">Clicking element 'xpath=//a[contains(text(), " Forgot your password? ")]'.</msg>
+<status status="PASS" starttime="20240115 14:49:58.642" endtime="20240115 14:49:58.725"/>
+</kw>
+<status status="PASS" starttime="20240115 14:49:58.642" endtime="20240115 14:49:58.725"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${forgotPasswordContent}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:49:58.759" level="INFO">Current page contains text 'Forgot your password?'.</msg>
+<status status="PASS" starttime="20240115 14:49:58.726" endtime="20240115 14:49:58.759"/>
+</kw>
+<status status="PASS" starttime="20240115 14:49:58.726" endtime="20240115 14:49:58.760"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:50:01.776" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:49:58.761" endtime="20240115 14:50:01.776"/>
+</kw>
+<status status="PASS" starttime="20240115 14:49:58.760" endtime="20240115 14:50:01.776"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${backToLogin}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:50:01.778" level="INFO">Clicking element 'xpath=//a[contains(text(), "Back to Login")]'.</msg>
+<status status="PASS" starttime="20240115 14:50:01.777" endtime="20240115 14:50:01.851"/>
+</kw>
+<status status="PASS" starttime="20240115 14:50:01.777" endtime="20240115 14:50:01.851"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${dontHaveAccount}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:50:01.853" level="INFO">Clicking element 'xpath=//a[contains(text(), " Don’t have an account? Register")]'.</msg>
+<status status="PASS" starttime="20240115 14:50:01.853" endtime="20240115 14:50:01.960"/>
+</kw>
+<status status="PASS" starttime="20240115 14:50:01.852" endtime="20240115 14:50:01.960"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${registerWithLPL}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:50:02.015" level="INFO">Current page contains text 'Register with letsplay.live'.</msg>
+<status status="PASS" starttime="20240115 14:50:01.961" endtime="20240115 14:50:02.016"/>
+</kw>
+<status status="PASS" starttime="20240115 14:50:01.961" endtime="20240115 14:50:02.016"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:50:05.026" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:50:02.018" endtime="20240115 14:50:05.026"/>
+</kw>
+<status status="PASS" starttime="20240115 14:50:02.018" endtime="20240115 14:50:05.026"/>
+</kw>
+<kw name="Test_End" library="setup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240115 14:50:05.027" endtime="20240115 14:50:11.380"/>
+</kw>
+<status status="PASS" starttime="20240115 14:50:05.027" endtime="20240115 14:50:11.380"/>
+</kw>
+<doc>This is to verify that hyperlinks are working in the login page</doc>
+<status status="PASS" starttime="20240115 14:49:47.248" endtime="20240115 14:50:11.381"/>
+</test>
+<test id="s1-t6" name="Verify RegistrationPage Accessability" line="62">
+<kw name="Test_Start" library="setup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${lpl_url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240115 14:50:11.383" level="INFO">Opening browser 'chrome' to base url 'https://gg.letsplay.live/home'.</msg>
+<status status="PASS" starttime="20240115 14:50:11.382" endtime="20240115 14:50:23.466"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240115 14:50:23.467" endtime="20240115 14:50:23.599"/>
+</kw>
+<status status="PASS" starttime="20240115 14:50:11.382" endtime="20240115 14:50:23.599"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:50:26.618" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:50:23.602" endtime="20240115 14:50:26.618"/>
+</kw>
+<status status="PASS" starttime="20240115 14:50:23.601" endtime="20240115 14:50:26.618"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${registerButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:50:26.620" level="INFO">Clicking element 'xpath=//a[contains(text(),'Sign up')]'.</msg>
+<status status="PASS" starttime="20240115 14:50:26.620" endtime="20240115 14:50:26.732"/>
+</kw>
+<status status="PASS" starttime="20240115 14:50:26.619" endtime="20240115 14:50:26.732"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:50:29.741" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:50:26.734" endtime="20240115 14:50:29.741"/>
+</kw>
+<status status="PASS" starttime="20240115 14:50:26.733" endtime="20240115 14:50:29.741"/>
+</kw>
+<kw name="Test_End" library="setup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240115 14:50:29.742" endtime="20240115 14:50:36.029"/>
+</kw>
+<status status="PASS" starttime="20240115 14:50:29.742" endtime="20240115 14:50:36.029"/>
+</kw>
+<doc>This verifies the accesibility of the registration page</doc>
+<status status="PASS" starttime="20240115 14:50:11.382" endtime="20240115 14:50:36.030"/>
+</test>
+<test id="s1-t7" name="Username field validation" line="68">
+<kw name="Test_Start" library="setup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${lpl_url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240115 14:50:36.034" level="INFO">Opening browser 'chrome' to base url 'https://gg.letsplay.live/home'.</msg>
+<status status="PASS" starttime="20240115 14:50:36.032" endtime="20240115 14:50:47.234"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240115 14:50:47.235" endtime="20240115 14:50:47.358"/>
+</kw>
+<status status="PASS" starttime="20240115 14:50:36.032" endtime="20240115 14:50:47.359"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:50:50.364" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:50:47.361" endtime="20240115 14:50:50.365"/>
+</kw>
+<status status="PASS" starttime="20240115 14:50:47.360" endtime="20240115 14:50:50.365"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${registerButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:50:50.368" level="INFO">Clicking element 'xpath=//a[contains(text(),'Sign up')]'.</msg>
+<status status="PASS" starttime="20240115 14:50:50.368" endtime="20240115 14:50:50.456"/>
+</kw>
+<status status="PASS" starttime="20240115 14:50:50.366" endtime="20240115 14:50:50.458"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:50:53.465" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:50:50.460" endtime="20240115 14:50:53.465"/>
+</kw>
+<status status="PASS" starttime="20240115 14:50:50.459" endtime="20240115 14:50:53.465"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${usernameField}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:50:53.467" level="INFO">Clicking element 'xpath=//input[starts-with(@name,"username")]'.</msg>
+<status status="PASS" starttime="20240115 14:50:53.466" endtime="20240115 14:50:53.519"/>
+</kw>
+<status status="PASS" starttime="20240115 14:50:53.466" endtime="20240115 14:50:53.519"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${usernameField}</arg>
+<arg>${uname_values['belowMin']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:50:53.522" level="INFO">Typing text 'ab' into text field 'xpath=//input[starts-with(@name,"username")]'.</msg>
+<status status="PASS" starttime="20240115 14:50:53.521" endtime="20240115 14:50:53.613"/>
+</kw>
+<status status="PASS" starttime="20240115 14:50:53.520" endtime="20240115 14:50:53.613"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:50:53.614" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:50:53.614" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:50:53.614" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:50:53.614" endtime="20240115 14:50:53.688"/>
+</kw>
+<status status="PASS" starttime="20240115 14:50:53.613" endtime="20240115 14:50:53.688"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${username_labels}[1]</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:50:53.736" level="INFO">Current page contains text 'Min. 3 and Max. 25 in alphanumerical characters.'.</msg>
+<status status="PASS" starttime="20240115 14:50:53.692" endtime="20240115 14:50:53.737"/>
+</kw>
+<status status="PASS" starttime="20240115 14:50:53.689" endtime="20240115 14:50:53.737"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:50:56.749" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:50:53.738" endtime="20240115 14:50:56.749"/>
+</kw>
+<status status="PASS" starttime="20240115 14:50:53.737" endtime="20240115 14:50:56.749"/>
+</kw>
+<kw name="ClearTextBox" library="PageObjects">
+<arg>${usernameField}</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${clearElement}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20240115 14:50:56.750" endtime="20240115 14:50:56.785"/>
+</kw>
+<status status="PASS" starttime="20240115 14:50:56.750" endtime="20240115 14:50:56.785"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:50:59.797" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:50:56.788" endtime="20240115 14:50:59.797"/>
+</kw>
+<status status="PASS" starttime="20240115 14:50:56.786" endtime="20240115 14:50:59.797"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${usernameField}</arg>
+<arg>${uname_values['alreadyExist']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:50:59.798" level="INFO">Typing text 'test' into text field 'xpath=//input[starts-with(@name,"username")]'.</msg>
+<status status="PASS" starttime="20240115 14:50:59.798" endtime="20240115 14:50:59.888"/>
+</kw>
+<status status="PASS" starttime="20240115 14:50:59.798" endtime="20240115 14:50:59.888"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:50:59.893" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:50:59.893" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:50:59.893" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:50:59.890" endtime="20240115 14:50:59.918"/>
+</kw>
+<status status="PASS" starttime="20240115 14:50:59.889" endtime="20240115 14:50:59.918"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${username_labels}[4]</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:50:59.961" level="INFO">Current page contains text 'Username already exist'.</msg>
+<status status="PASS" starttime="20240115 14:50:59.920" endtime="20240115 14:50:59.961"/>
+</kw>
+<status status="PASS" starttime="20240115 14:50:59.920" endtime="20240115 14:50:59.961"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:51:02.978" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:50:59.964" endtime="20240115 14:51:02.978"/>
+</kw>
+<status status="PASS" starttime="20240115 14:50:59.962" endtime="20240115 14:51:02.978"/>
+</kw>
+<kw name="ClearTextBox" library="PageObjects">
+<arg>${usernameField}</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${clearElement}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20240115 14:51:02.979" endtime="20240115 14:51:03.021"/>
+</kw>
+<status status="PASS" starttime="20240115 14:51:02.978" endtime="20240115 14:51:03.022"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:51:06.036" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:51:03.025" endtime="20240115 14:51:06.036"/>
+</kw>
+<status status="PASS" starttime="20240115 14:51:03.024" endtime="20240115 14:51:06.036"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${usernameField}</arg>
+<arg>${uname_values['invalid']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:51:06.038" level="INFO">Typing text 'cl&amp;&amp;' into text field 'xpath=//input[starts-with(@name,"username")]'.</msg>
+<status status="PASS" starttime="20240115 14:51:06.038" endtime="20240115 14:51:06.156"/>
+</kw>
+<status status="PASS" starttime="20240115 14:51:06.037" endtime="20240115 14:51:06.156"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:51:06.157" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:51:06.157" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:51:06.157" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:51:06.157" endtime="20240115 14:51:06.185"/>
+</kw>
+<status status="PASS" starttime="20240115 14:51:06.157" endtime="20240115 14:51:06.185"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${username_labels}[2]</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:51:06.237" level="INFO">Current page contains text 'NO special characters allowed (!%*@$)'.</msg>
+<status status="PASS" starttime="20240115 14:51:06.186" endtime="20240115 14:51:06.237"/>
+</kw>
+<status status="PASS" starttime="20240115 14:51:06.186" endtime="20240115 14:51:06.238"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:51:09.250" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:51:06.239" endtime="20240115 14:51:09.250"/>
+</kw>
+<status status="PASS" starttime="20240115 14:51:06.238" endtime="20240115 14:51:09.250"/>
+</kw>
+<kw name="ClearTextBox" library="PageObjects">
+<arg>${usernameField}</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${clearElement}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20240115 14:51:09.250" endtime="20240115 14:51:09.292"/>
+</kw>
+<status status="PASS" starttime="20240115 14:51:09.250" endtime="20240115 14:51:09.293"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:51:12.300" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:51:09.295" endtime="20240115 14:51:12.300"/>
+</kw>
+<status status="PASS" starttime="20240115 14:51:09.294" endtime="20240115 14:51:12.301"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${usernameField}</arg>
+<arg>${uname_values['valid']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:51:12.304" level="INFO">Typing text 'AutomationTest123' into text field 'xpath=//input[starts-with(@name,"username")]'.</msg>
+<status status="PASS" starttime="20240115 14:51:12.303" endtime="20240115 14:51:12.452"/>
+</kw>
+<status status="PASS" starttime="20240115 14:51:12.302" endtime="20240115 14:51:12.452"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:51:12.454" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:51:12.454" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:51:12.454" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:51:12.454" endtime="20240115 14:51:12.472"/>
+</kw>
+<status status="PASS" starttime="20240115 14:51:12.453" endtime="20240115 14:51:12.472"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:51:15.486" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:51:12.476" endtime="20240115 14:51:15.486"/>
+</kw>
+<status status="PASS" starttime="20240115 14:51:12.473" endtime="20240115 14:51:15.486"/>
+</kw>
+<kw name="Test_End" library="setup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240115 14:51:15.487" endtime="20240115 14:51:21.835"/>
+</kw>
+<status status="PASS" starttime="20240115 14:51:15.487" endtime="20240115 14:51:21.835"/>
+</kw>
+<doc>This test case verifies that the username field validations are properly working</doc>
+<status status="PASS" starttime="20240115 14:50:36.031" endtime="20240115 14:51:21.835"/>
+</test>
+<test id="s1-t8" name="DOB Calendar" line="96">
+<kw name="Test_Start" library="setup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${lpl_url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240115 14:51:21.838" level="INFO">Opening browser 'chrome' to base url 'https://gg.letsplay.live/home'.</msg>
+<status status="PASS" starttime="20240115 14:51:21.836" endtime="20240115 14:51:32.392"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240115 14:51:32.392" endtime="20240115 14:51:32.508"/>
+</kw>
+<status status="PASS" starttime="20240115 14:51:21.836" endtime="20240115 14:51:32.508"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${calenderFirstElement}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:51:32.515" level="INFO">Clicking element 'xpath=//tbody/tr[2]/td[2]/button[1]/span[1]'.</msg>
+<msg timestamp="20240115 14:51:32.845" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240115 14:51:32.846" level="FAIL">Element with locator 'xpath=//tbody/tr[2]/td[2]/button[1]/span[1]' not found.</msg>
+<status status="FAIL" starttime="20240115 14:51:32.512" endtime="20240115 14:51:32.851"/>
+</kw>
+<status status="FAIL" starttime="20240115 14:51:32.510" endtime="20240115 14:51:32.851"/>
+</kw>
+<kw name="Test_End" library="setup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240115 14:51:32.855" endtime="20240115 14:51:39.131"/>
+</kw>
+<status status="PASS" starttime="20240115 14:51:32.854" endtime="20240115 14:51:39.131"/>
+</kw>
+<status status="FAIL" starttime="20240115 14:51:21.836" endtime="20240115 14:51:39.132">Element with locator 'xpath=//tbody/tr[2]/td[2]/button[1]/span[1]' not found.</status>
+</test>
+<test id="s1-t9" name="Email field validation" line="99">
+<kw name="Test_Start" library="setup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${lpl_url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240115 14:51:39.135" level="INFO">Opening browser 'chrome' to base url 'https://gg.letsplay.live/home'.</msg>
+<status status="PASS" starttime="20240115 14:51:39.134" endtime="20240115 14:51:50.955"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240115 14:51:50.955" endtime="20240115 14:51:51.081"/>
+</kw>
+<status status="PASS" starttime="20240115 14:51:39.134" endtime="20240115 14:51:51.082"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:51:54.095" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:51:51.085" endtime="20240115 14:51:54.095"/>
+</kw>
+<status status="PASS" starttime="20240115 14:51:51.084" endtime="20240115 14:51:54.095"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${registerButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:51:54.096" level="INFO">Clicking element 'xpath=//a[contains(text(),'Sign up')]'.</msg>
+<status status="PASS" starttime="20240115 14:51:54.096" endtime="20240115 14:51:54.162"/>
+</kw>
+<status status="PASS" starttime="20240115 14:51:54.096" endtime="20240115 14:51:54.162"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:51:57.175" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:51:54.164" endtime="20240115 14:51:57.175"/>
+</kw>
+<status status="PASS" starttime="20240115 14:51:54.163" endtime="20240115 14:51:57.175"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${emailField}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:51:57.176" level="INFO">Clicking element 'xpath=//input[starts-with(@name,"email")]'.</msg>
+<status status="PASS" starttime="20240115 14:51:57.176" endtime="20240115 14:51:57.224"/>
+</kw>
+<status status="PASS" starttime="20240115 14:51:57.175" endtime="20240115 14:51:57.224"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:51:57.226" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:51:57.226" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:51:57.226" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:51:57.225" endtime="20240115 14:51:57.253"/>
+</kw>
+<status status="PASS" starttime="20240115 14:51:57.225" endtime="20240115 14:51:57.254"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${email['required']}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:51:57.310" level="INFO">Current page contains text 'This field is required'.</msg>
+<status status="PASS" starttime="20240115 14:51:57.256" endtime="20240115 14:51:57.310"/>
+</kw>
+<status status="PASS" starttime="20240115 14:51:57.255" endtime="20240115 14:51:57.310"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:52:00.322" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:51:57.312" endtime="20240115 14:52:00.322"/>
+</kw>
+<status status="PASS" starttime="20240115 14:51:57.312" endtime="20240115 14:52:00.323"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${emailField}</arg>
+<arg>${email_values['invalidemail1']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:52:00.325" level="INFO">Typing text 'email.com' into text field 'xpath=//input[starts-with(@name,"email")]'.</msg>
+<status status="PASS" starttime="20240115 14:52:00.325" endtime="20240115 14:52:00.461"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:00.323" endtime="20240115 14:52:00.461"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:52:00.464" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:52:00.464" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:52:00.465" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:52:00.463" endtime="20240115 14:52:00.502"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:00.463" endtime="20240115 14:52:00.502"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${email['invalid']}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:52:00.539" level="INFO">Current page contains text 'Invalid email address'.</msg>
+<status status="PASS" starttime="20240115 14:52:00.504" endtime="20240115 14:52:00.539"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:00.503" endtime="20240115 14:52:00.539"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:52:03.542" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:52:00.540" endtime="20240115 14:52:03.543"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:00.540" endtime="20240115 14:52:03.543"/>
+</kw>
+<kw name="ClearTextBox" library="PageObjects">
+<arg>${emailField}</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${clearElement}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20240115 14:52:03.544" endtime="20240115 14:52:03.588"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:03.544" endtime="20240115 14:52:03.589"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${emailField}</arg>
+<arg>${email_values['invalidemail2']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:52:03.594" level="INFO">Typing text 'email@.com' into text field 'xpath=//input[starts-with(@name,"email")]'.</msg>
+<status status="PASS" starttime="20240115 14:52:03.593" endtime="20240115 14:52:03.755"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:03.590" endtime="20240115 14:52:03.756"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:52:03.767" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:52:03.768" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:52:03.768" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:52:03.764" endtime="20240115 14:52:03.851"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:03.762" endtime="20240115 14:52:03.852"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${email['invalid']}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:52:03.901" level="INFO">Current page contains text 'Invalid email address'.</msg>
+<status status="PASS" starttime="20240115 14:52:03.857" endtime="20240115 14:52:03.901"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:03.853" endtime="20240115 14:52:03.901"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:52:06.911" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:52:03.903" endtime="20240115 14:52:06.911"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:03.902" endtime="20240115 14:52:06.911"/>
+</kw>
+<kw name="ClearTextBox" library="PageObjects">
+<arg>${emailField}</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${clearElement}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20240115 14:52:06.913" endtime="20240115 14:52:06.943"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:06.912" endtime="20240115 14:52:06.943"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${emailField}</arg>
+<arg>${email_values['invalidemail3']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:52:06.948" level="INFO">Typing text 'email@com' into text field 'xpath=//input[starts-with(@name,"email")]'.</msg>
+<status status="PASS" starttime="20240115 14:52:06.946" endtime="20240115 14:52:07.088"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:06.943" endtime="20240115 14:52:07.088"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:52:07.090" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:52:07.090" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:52:07.090" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:52:07.090" endtime="20240115 14:52:07.108"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:07.088" endtime="20240115 14:52:07.108"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${email['invalid']}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:52:07.147" level="INFO">Current page contains text 'Invalid email address'.</msg>
+<status status="PASS" starttime="20240115 14:52:07.111" endtime="20240115 14:52:07.148"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:07.109" endtime="20240115 14:52:07.148"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:52:10.160" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:52:07.150" endtime="20240115 14:52:10.160"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:07.149" endtime="20240115 14:52:10.160"/>
+</kw>
+<kw name="ClearTextBox" library="PageObjects">
+<arg>${emailField}</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${clearElement}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20240115 14:52:10.162" endtime="20240115 14:52:10.213"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:10.162" endtime="20240115 14:52:10.215"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${emailField}</arg>
+<arg>${email_values['validemail']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:52:10.216" level="INFO">Typing text 'testautomation@email.com' into text field 'xpath=//input[starts-with(@name,"email")]'.</msg>
+<status status="PASS" starttime="20240115 14:52:10.216" endtime="20240115 14:52:10.422"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:10.215" endtime="20240115 14:52:10.422"/>
+</kw>
+<kw name="Test_End" library="setup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240115 14:52:10.423" endtime="20240115 14:52:16.755"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:10.423" endtime="20240115 14:52:16.755"/>
+</kw>
+<doc>This test case verifies that the email field validations are properly working</doc>
+<status status="PASS" starttime="20240115 14:51:39.134" endtime="20240115 14:52:16.756"/>
+</test>
+<test id="s1-t10" name="Password field validation" line="125">
+<kw name="Test_Start" library="setup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${lpl_url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240115 14:52:16.759" level="INFO">Opening browser 'chrome' to base url 'https://gg.letsplay.live/home'.</msg>
+<status status="PASS" starttime="20240115 14:52:16.758" endtime="20240115 14:52:40.497"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240115 14:52:40.497" endtime="20240115 14:52:40.629"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:16.758" endtime="20240115 14:52:40.630"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:52:43.636" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:52:40.634" endtime="20240115 14:52:43.636"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:40.632" endtime="20240115 14:52:43.638"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${registerButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:52:43.640" level="INFO">Clicking element 'xpath=//a[contains(text(),'Sign up')]'.</msg>
+<status status="PASS" starttime="20240115 14:52:43.640" endtime="20240115 14:52:43.721"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:43.639" endtime="20240115 14:52:43.721"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:52:46.726" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:52:43.722" endtime="20240115 14:52:46.726"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:43.721" endtime="20240115 14:52:46.726"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${passwordField}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:52:46.727" level="INFO">Clicking element 'xpath=//input[starts-with(@name, "password")]'.</msg>
+<status status="PASS" starttime="20240115 14:52:46.726" endtime="20240115 14:52:46.783"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:46.726" endtime="20240115 14:52:46.783"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:52:46.786" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:52:46.786" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:52:46.786" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:52:46.785" endtime="20240115 14:52:46.827"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:46.784" endtime="20240115 14:52:46.828"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${password['required']}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:52:46.868" level="INFO">Current page contains text 'This field is required'.</msg>
+<status status="PASS" starttime="20240115 14:52:46.829" endtime="20240115 14:52:46.868"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:46.828" endtime="20240115 14:52:46.869"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:52:49.876" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:52:46.872" endtime="20240115 14:52:49.877"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:46.871" endtime="20240115 14:52:49.877"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${passwordField}</arg>
+<arg>${pword_values['invalid1']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:52:49.880" level="INFO">Typing text '1234abcd' into text field 'xpath=//input[starts-with(@name, "password")]'.</msg>
+<status status="PASS" starttime="20240115 14:52:49.879" endtime="20240115 14:52:50.036"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:49.878" endtime="20240115 14:52:50.036"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:52:50.038" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:52:50.038" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:52:50.038" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:52:50.037" endtime="20240115 14:52:50.072"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:50.037" endtime="20240115 14:52:50.073"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${password['uppercase']}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:52:50.116" level="INFO">Current page contains text 'Must contain at least 1 upper case character'.</msg>
+<status status="PASS" starttime="20240115 14:52:50.074" endtime="20240115 14:52:50.116"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:50.073" endtime="20240115 14:52:50.116"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:52:53.121" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:52:50.120" endtime="20240115 14:52:53.121"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:50.118" endtime="20240115 14:52:53.121"/>
+</kw>
+<kw name="ClearTextBox" library="PageObjects">
+<arg>${passwordField}</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${clearElement}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20240115 14:52:53.122" endtime="20240115 14:52:53.169"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:53.122" endtime="20240115 14:52:53.169"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${passwordField}</arg>
+<arg>${pword_values['invalid2']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:52:53.173" level="INFO">Typing text '1234abcD' into text field 'xpath=//input[starts-with(@name, "password")]'.</msg>
+<status status="PASS" starttime="20240115 14:52:53.172" endtime="20240115 14:52:53.294"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:53.170" endtime="20240115 14:52:53.295"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:52:53.298" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:52:53.298" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:52:53.298" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:52:53.296" endtime="20240115 14:52:53.320"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:53.296" endtime="20240115 14:52:53.320"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${password['specialchar']}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:52:53.355" level="INFO">Current page contains text 'Must contain at least 1 special character'.</msg>
+<status status="PASS" starttime="20240115 14:52:53.323" endtime="20240115 14:52:53.355"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:53.321" endtime="20240115 14:52:53.355"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:52:56.361" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:52:53.356" endtime="20240115 14:52:56.362"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:53.356" endtime="20240115 14:52:56.362"/>
+</kw>
+<kw name="ClearTextBox" library="PageObjects">
+<arg>${passwordField}</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${clearElement}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20240115 14:52:56.364" endtime="20240115 14:52:56.418"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:56.363" endtime="20240115 14:52:56.418"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${passwordField}</arg>
+<arg>${pword_values['invalid3']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:52:56.423" level="INFO">Typing text '1234abc!' into text field 'xpath=//input[starts-with(@name, "password")]'.</msg>
+<status status="PASS" starttime="20240115 14:52:56.422" endtime="20240115 14:52:56.540"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:56.420" endtime="20240115 14:52:56.540"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:52:56.542" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:52:56.543" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:52:56.543" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:52:56.541" endtime="20240115 14:52:56.558"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:56.541" endtime="20240115 14:52:56.558"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${password['uppercase']}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:52:56.587" level="INFO">Current page contains text 'Must contain at least 1 upper case character'.</msg>
+<status status="PASS" starttime="20240115 14:52:56.559" endtime="20240115 14:52:56.587"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:56.558" endtime="20240115 14:52:56.587"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:52:59.604" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:52:56.588" endtime="20240115 14:52:59.604"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:56.587" endtime="20240115 14:52:59.604"/>
+</kw>
+<kw name="ClearTextBox" library="PageObjects">
+<arg>${passwordField}</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${clearElement}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20240115 14:52:59.605" endtime="20240115 14:52:59.646"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:59.605" endtime="20240115 14:52:59.646"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${passwordField}</arg>
+<arg>${pword_values['invalid4']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:52:59.652" level="INFO">Typing text '1234aB!' into text field 'xpath=//input[starts-with(@name, "password")]'.</msg>
+<status status="PASS" starttime="20240115 14:52:59.650" endtime="20240115 14:52:59.766"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:59.648" endtime="20240115 14:52:59.766"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:52:59.768" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:52:59.768" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:52:59.768" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:52:59.767" endtime="20240115 14:52:59.782"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:59.766" endtime="20240115 14:52:59.782"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${password['length']}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:52:59.810" level="INFO">Current page contains text 'Must be at least 8 characters'.</msg>
+<status status="PASS" starttime="20240115 14:52:59.784" endtime="20240115 14:52:59.810"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:59.783" endtime="20240115 14:52:59.810"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:53:02.821" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:52:59.811" endtime="20240115 14:53:02.821"/>
+</kw>
+<status status="PASS" starttime="20240115 14:52:59.811" endtime="20240115 14:53:02.821"/>
+</kw>
+<kw name="ClearTextBox" library="PageObjects">
+<arg>${passwordField}</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${clearElement}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20240115 14:53:02.822" endtime="20240115 14:53:02.867"/>
+</kw>
+<status status="PASS" starttime="20240115 14:53:02.822" endtime="20240115 14:53:02.868"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${passwordField}</arg>
+<arg>${pword_values['valid']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:53:02.870" level="INFO">Typing text '1234abC!' into text field 'xpath=//input[starts-with(@name, "password")]'.</msg>
+<status status="PASS" starttime="20240115 14:53:02.868" endtime="20240115 14:53:03.005"/>
+</kw>
+<status status="PASS" starttime="20240115 14:53:02.868" endtime="20240115 14:53:03.005"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:53:06.014" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:53:03.006" endtime="20240115 14:53:06.014"/>
+</kw>
+<status status="PASS" starttime="20240115 14:53:03.006" endtime="20240115 14:53:06.014"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${passwordMasking}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:53:06.015" level="INFO">Clicking element 'xpath=//body/app-root[1]/app-log-reg[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[2]/app-submit-form[1]/section[1]/form[1]/div[5]/div[1]/label[1]/div[1]/mat-form-field[1]/div[1]/div[1]/div[2]/span[1]/*[1]'.</msg>
+<status status="PASS" starttime="20240115 14:53:06.015" endtime="20240115 14:53:06.075"/>
+</kw>
+<status status="PASS" starttime="20240115 14:53:06.014" endtime="20240115 14:53:06.075"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:53:09.081" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:53:06.078" endtime="20240115 14:53:09.081"/>
+</kw>
+<status status="PASS" starttime="20240115 14:53:06.076" endtime="20240115 14:53:09.081"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${passwordMasking}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:53:09.082" level="INFO">Clicking element 'xpath=//body/app-root[1]/app-log-reg[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[2]/app-submit-form[1]/section[1]/form[1]/div[5]/div[1]/label[1]/div[1]/mat-form-field[1]/div[1]/div[1]/div[2]/span[1]/*[1]'.</msg>
+<status status="PASS" starttime="20240115 14:53:09.082" endtime="20240115 14:53:09.146"/>
+</kw>
+<status status="PASS" starttime="20240115 14:53:09.082" endtime="20240115 14:53:09.146"/>
+</kw>
+<kw name="Test_End" library="setup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240115 14:53:09.148" endtime="20240115 14:53:15.511"/>
+</kw>
+<status status="PASS" starttime="20240115 14:53:09.147" endtime="20240115 14:53:15.511"/>
+</kw>
+<doc>This test case verifies that the password field validations are properly working</doc>
+<status status="PASS" starttime="20240115 14:52:16.758" endtime="20240115 14:53:15.512"/>
+</test>
+<test id="s1-t11" name="TnC checkbox validation" line="160">
+<kw name="Test_Start" library="setup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${lpl_url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240115 14:53:15.515" level="INFO">Opening browser 'chrome' to base url 'https://gg.letsplay.live/home'.</msg>
+<status status="PASS" starttime="20240115 14:53:15.514" endtime="20240115 14:53:53.168"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240115 14:53:53.168" endtime="20240115 14:53:53.282"/>
+</kw>
+<status status="PASS" starttime="20240115 14:53:15.514" endtime="20240115 14:53:53.283"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:53:56.287" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:53:53.284" endtime="20240115 14:53:56.287"/>
+</kw>
+<status status="PASS" starttime="20240115 14:53:53.283" endtime="20240115 14:53:56.287"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${registerButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:53:56.290" level="INFO">Clicking element 'xpath=//a[contains(text(),'Sign up')]'.</msg>
+<status status="PASS" starttime="20240115 14:53:56.289" endtime="20240115 14:53:56.363"/>
+</kw>
+<status status="PASS" starttime="20240115 14:53:56.288" endtime="20240115 14:53:56.363"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:53:59.376" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:53:56.364" endtime="20240115 14:53:59.376"/>
+</kw>
+<status status="PASS" starttime="20240115 14:53:56.364" endtime="20240115 14:53:59.376"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${termsCondition}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:53:59.377" level="INFO">Clicking element 'xpath=//input[starts-with(@id, "mat-mdc-checkbox-1-input")]'.</msg>
+<status status="PASS" starttime="20240115 14:53:59.377" endtime="20240115 14:53:59.447"/>
+</kw>
+<status status="PASS" starttime="20240115 14:53:59.377" endtime="20240115 14:53:59.447"/>
+</kw>
+<kw name="ElementChecker" library="PageObjects">
+<arg>${temsConditionID}</arg>
+<arg>${termsConditionChecked2}</arg>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${classAttribut}</var>
+<arg>${idOfTag}</arg>
+<arg>class</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20240115 14:53:59.448" level="WARN">Keyword 'Get Element Attribute' found both from a custom library 'SeleniumLibrary' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Get Element Attribute' or 'XML.Get Element Attribute'.</msg>
+<msg timestamp="20240115 14:53:59.508" level="INFO">${classAttribut} = mdc-checkbox__native-control mdc-checkbox--anim-unchecked-checked mdc-checkbox--selected</msg>
+<status status="PASS" starttime="20240115 14:53:59.448" endtime="20240115 14:53:59.508"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${classAttribut}</arg>
+<arg>${classToCheck}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20240115 14:53:59.509" endtime="20240115 14:53:59.509"/>
+</kw>
+<status status="PASS" starttime="20240115 14:53:59.447" endtime="20240115 14:53:59.510"/>
+</kw>
+<kw name="Test_End" library="setup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240115 14:53:59.514" endtime="20240115 14:54:05.865"/>
+</kw>
+<status status="PASS" starttime="20240115 14:53:59.511" endtime="20240115 14:54:05.865"/>
+</kw>
+<doc>This test case verifies that the tnc checkbox is properly working</doc>
+<status status="PASS" starttime="20240115 14:53:15.514" endtime="20240115 14:54:05.866"/>
+</test>
+<test id="s1-t12" name="Age checkbox validation" line="169">
+<kw name="Test_Start" library="setup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${lpl_url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240115 14:54:05.868" level="INFO">Opening browser 'chrome' to base url 'https://gg.letsplay.live/home'.</msg>
+<status status="PASS" starttime="20240115 14:54:05.868" endtime="20240115 14:54:29.741"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240115 14:54:29.742" endtime="20240115 14:54:29.861"/>
+</kw>
+<status status="PASS" starttime="20240115 14:54:05.867" endtime="20240115 14:54:29.861"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:54:32.865" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:54:29.863" endtime="20240115 14:54:32.865"/>
+</kw>
+<status status="PASS" starttime="20240115 14:54:29.862" endtime="20240115 14:54:32.865"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${registerButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:54:32.866" level="INFO">Clicking element 'xpath=//a[contains(text(),'Sign up')]'.</msg>
+<status status="PASS" starttime="20240115 14:54:32.865" endtime="20240115 14:54:32.950"/>
+</kw>
+<status status="PASS" starttime="20240115 14:54:32.865" endtime="20240115 14:54:32.950"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:54:35.966" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:54:32.954" endtime="20240115 14:54:35.966"/>
+</kw>
+<status status="PASS" starttime="20240115 14:54:32.952" endtime="20240115 14:54:35.966"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${ageVerification}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:54:35.967" level="INFO">Clicking element 'xpath=//input[starts-with(@id, "mat-mdc-checkbox-2-input")]'.</msg>
+<status status="PASS" starttime="20240115 14:54:35.967" endtime="20240115 14:54:36.015"/>
+</kw>
+<status status="PASS" starttime="20240115 14:54:35.967" endtime="20240115 14:54:36.015"/>
+</kw>
+<kw name="ElementChecker" library="PageObjects">
+<arg>${ageVerificationID}</arg>
+<arg>${ageVerificationChecked}</arg>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${classAttribut}</var>
+<arg>${idOfTag}</arg>
+<arg>class</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20240115 14:54:36.016" level="WARN">Keyword 'Get Element Attribute' found both from a custom library 'SeleniumLibrary' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Get Element Attribute' or 'XML.Get Element Attribute'.</msg>
+<msg timestamp="20240115 14:54:36.052" level="INFO">${classAttribut} = mdc-checkbox__native-control mdc-checkbox--anim-unchecked-checked mdc-checkbox--selected</msg>
+<status status="PASS" starttime="20240115 14:54:36.016" endtime="20240115 14:54:36.052"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${classAttribut}</arg>
+<arg>${classToCheck}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20240115 14:54:36.052" endtime="20240115 14:54:36.052"/>
+</kw>
+<status status="PASS" starttime="20240115 14:54:36.016" endtime="20240115 14:54:36.052"/>
+</kw>
+<kw name="Test_End" library="setup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240115 14:54:36.054" endtime="20240115 14:54:42.402"/>
+</kw>
+<status status="PASS" starttime="20240115 14:54:36.053" endtime="20240115 14:54:42.402"/>
+</kw>
+<doc>This test case verifies that the age checkbox is properly working</doc>
+<status status="PASS" starttime="20240115 14:54:05.867" endtime="20240115 14:54:42.403"/>
+</test>
+<test id="s1-t13" name="Hyperlink Redirections" line="177">
+<kw name="Test_Start" library="setup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${lpl_url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240115 14:54:42.405" level="INFO">Opening browser 'chrome' to base url 'https://gg.letsplay.live/home'.</msg>
+<status status="PASS" starttime="20240115 14:54:42.405" endtime="20240115 14:54:52.622"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240115 14:54:52.622" endtime="20240115 14:54:52.741"/>
+</kw>
+<status status="PASS" starttime="20240115 14:54:42.404" endtime="20240115 14:54:52.741"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:54:55.749" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:54:52.743" endtime="20240115 14:54:55.749"/>
+</kw>
+<status status="PASS" starttime="20240115 14:54:52.741" endtime="20240115 14:54:55.749"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${registerButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:54:55.750" level="INFO">Clicking element 'xpath=//a[contains(text(),'Sign up')]'.</msg>
+<status status="PASS" starttime="20240115 14:54:55.750" endtime="20240115 14:54:55.801"/>
+</kw>
+<status status="PASS" starttime="20240115 14:54:55.749" endtime="20240115 14:54:55.801"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:54:58.807" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:54:55.802" endtime="20240115 14:54:58.807"/>
+</kw>
+<status status="PASS" starttime="20240115 14:54:55.802" endtime="20240115 14:54:58.807"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${termsOfUseHyperlink}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:54:58.808" level="INFO">Clicking element 'xpath=//a[contains(text(),'Terms of Use')]'.</msg>
+<status status="PASS" starttime="20240115 14:54:58.808" endtime="20240115 14:54:58.887"/>
+</kw>
+<status status="PASS" starttime="20240115 14:54:58.807" endtime="20240115 14:54:58.888"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:55:01.888" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:54:58.888" endtime="20240115 14:55:01.888"/>
+</kw>
+<status status="PASS" starttime="20240115 14:54:58.888" endtime="20240115 14:55:01.888"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${termsOfUsePageContent}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:55:01.909" level="INFO">Current page contains text 'Terms of Use'.</msg>
+<status status="PASS" starttime="20240115 14:55:01.890" endtime="20240115 14:55:01.909"/>
+</kw>
+<status status="PASS" starttime="20240115 14:55:01.890" endtime="20240115 14:55:01.909"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:55:04.919" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:55:01.910" endtime="20240115 14:55:04.919"/>
+</kw>
+<status status="PASS" starttime="20240115 14:55:01.909" endtime="20240115 14:55:04.919"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${registerButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:55:04.920" level="INFO">Clicking element 'xpath=//a[contains(text(),'Sign up')]'.</msg>
+<status status="PASS" starttime="20240115 14:55:04.920" endtime="20240115 14:55:04.994"/>
+</kw>
+<status status="PASS" starttime="20240115 14:55:04.919" endtime="20240115 14:55:04.994"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:55:07.996" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:55:04.995" endtime="20240115 14:55:07.996"/>
+</kw>
+<status status="PASS" starttime="20240115 14:55:04.995" endtime="20240115 14:55:07.996"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${privacyPolicy}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:55:07.997" level="INFO">Clicking element 'xpath=//a[contains(text()," Privacy Policy")]'.</msg>
+<status status="PASS" starttime="20240115 14:55:07.997" endtime="20240115 14:55:08.095"/>
+</kw>
+<status status="PASS" starttime="20240115 14:55:07.997" endtime="20240115 14:55:08.095"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${termsOfUsePageContent}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:55:08.114" level="INFO">Current page contains text 'Terms of Use'.</msg>
+<status status="PASS" starttime="20240115 14:55:08.096" endtime="20240115 14:55:08.115"/>
+</kw>
+<status status="PASS" starttime="20240115 14:55:08.095" endtime="20240115 14:55:08.115"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:55:11.120" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:55:08.115" endtime="20240115 14:55:11.120"/>
+</kw>
+<status status="PASS" starttime="20240115 14:55:08.115" endtime="20240115 14:55:11.120"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${registerButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:55:11.120" level="INFO">Clicking element 'xpath=//a[contains(text(),'Sign up')]'.</msg>
+<status status="PASS" starttime="20240115 14:55:11.120" endtime="20240115 14:55:11.196"/>
+</kw>
+<status status="PASS" starttime="20240115 14:55:11.120" endtime="20240115 14:55:11.196"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:55:14.208" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:55:11.203" endtime="20240115 14:55:14.208"/>
+</kw>
+<status status="PASS" starttime="20240115 14:55:11.200" endtime="20240115 14:55:14.208"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${alreadyRegistered}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:55:14.209" level="INFO">Clicking element 'xpath=//a[contains(text()," Already registered? Log in ")]'.</msg>
+<status status="PASS" starttime="20240115 14:55:14.209" endtime="20240115 14:55:14.273"/>
+</kw>
+<status status="PASS" starttime="20240115 14:55:14.209" endtime="20240115 14:55:14.273"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${loginPageContent}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:55:14.290" level="INFO">Current page contains text 'Login to letsplay.live'.</msg>
+<status status="PASS" starttime="20240115 14:55:14.273" endtime="20240115 14:55:14.290"/>
+</kw>
+<status status="PASS" starttime="20240115 14:55:14.273" endtime="20240115 14:55:14.290"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:55:17.304" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:55:14.291" endtime="20240115 14:55:17.304"/>
+</kw>
+<status status="PASS" starttime="20240115 14:55:14.291" endtime="20240115 14:55:17.304"/>
+</kw>
+<kw name="Test_End" library="setup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240115 14:55:17.305" endtime="20240115 14:55:23.615"/>
+</kw>
+<status status="PASS" starttime="20240115 14:55:17.305" endtime="20240115 14:55:23.616"/>
+</kw>
+<doc>This test case verifies that the Terms of Use, Privacy Policy and Already have an account redirects to correct pages</doc>
+<status status="PASS" starttime="20240115 14:54:42.404" endtime="20240115 14:55:23.616"/>
+</test>
+<test id="s1-t14" name="Perform Registration Procedure" line="197">
+<kw name="Test_Start" library="setup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${lpl_url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240115 14:55:23.619" level="INFO">Opening browser 'chrome' to base url 'https://gg.letsplay.live/home'.</msg>
+<status status="PASS" starttime="20240115 14:55:23.619" endtime="20240115 14:56:55.731"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240115 14:56:55.731" endtime="20240115 14:56:55.856"/>
+</kw>
+<status status="PASS" starttime="20240115 14:55:23.618" endtime="20240115 14:56:55.856"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:56:58.864" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:56:55.857" endtime="20240115 14:56:58.864"/>
+</kw>
+<status status="PASS" starttime="20240115 14:56:55.857" endtime="20240115 14:56:58.864"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${registerButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:56:58.866" level="INFO">Clicking element 'xpath=//a[contains(text(),'Sign up')]'.</msg>
+<status status="PASS" starttime="20240115 14:56:58.866" endtime="20240115 14:56:58.920"/>
+</kw>
+<status status="PASS" starttime="20240115 14:56:58.864" endtime="20240115 14:56:58.920"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:57:01.930" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:56:58.922" endtime="20240115 14:57:01.930"/>
+</kw>
+<status status="PASS" starttime="20240115 14:56:58.921" endtime="20240115 14:57:01.930"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${usernameField}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:57:01.931" level="INFO">Clicking element 'xpath=//input[starts-with(@name,"username")]'.</msg>
+<status status="PASS" starttime="20240115 14:57:01.931" endtime="20240115 14:57:01.977"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:01.930" endtime="20240115 14:57:01.978"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${usernameField}</arg>
+<arg>${uname_values['belowMin']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:57:01.980" level="INFO">Typing text 'ab' into text field 'xpath=//input[starts-with(@name,"username")]'.</msg>
+<status status="PASS" starttime="20240115 14:57:01.980" endtime="20240115 14:57:02.049"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:01.978" endtime="20240115 14:57:02.049"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:57:02.050" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:57:02.050" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:57:02.050" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:57:02.049" endtime="20240115 14:57:02.110"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:02.049" endtime="20240115 14:57:02.110"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${username_labels}[1]</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:57:02.134" level="INFO">Current page contains text 'Min. 3 and Max. 25 in alphanumerical characters.'.</msg>
+<status status="PASS" starttime="20240115 14:57:02.111" endtime="20240115 14:57:02.134"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:02.111" endtime="20240115 14:57:02.134"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:57:05.149" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:57:02.135" endtime="20240115 14:57:05.149"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:02.134" endtime="20240115 14:57:05.149"/>
+</kw>
+<kw name="ClearTextBox" library="PageObjects">
+<arg>${usernameField}</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${clearElement}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20240115 14:57:05.150" endtime="20240115 14:57:05.184"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:05.150" endtime="20240115 14:57:05.185"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:57:08.188" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:57:05.186" endtime="20240115 14:57:08.188"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:05.186" endtime="20240115 14:57:08.188"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${usernameField}</arg>
+<arg>${uname_values['alreadyExist']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:57:08.190" level="INFO">Typing text 'test' into text field 'xpath=//input[starts-with(@name,"username")]'.</msg>
+<status status="PASS" starttime="20240115 14:57:08.189" endtime="20240115 14:57:08.272"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:08.189" endtime="20240115 14:57:08.272"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:57:08.272" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:57:08.272" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:57:08.272" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:57:08.272" endtime="20240115 14:57:08.289"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:08.272" endtime="20240115 14:57:08.289"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${username_labels}[4]</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:57:08.334" level="INFO">Current page contains text 'Username already exist'.</msg>
+<status status="PASS" starttime="20240115 14:57:08.290" endtime="20240115 14:57:08.334"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:08.290" endtime="20240115 14:57:08.334"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:57:11.343" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:57:08.334" endtime="20240115 14:57:11.343"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:08.334" endtime="20240115 14:57:11.343"/>
+</kw>
+<kw name="ClearTextBox" library="PageObjects">
+<arg>${usernameField}</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${clearElement}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20240115 14:57:11.344" endtime="20240115 14:57:11.376"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:11.343" endtime="20240115 14:57:11.377"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:57:14.389" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:57:11.378" endtime="20240115 14:57:14.389"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:11.377" endtime="20240115 14:57:14.389"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${usernameField}</arg>
+<arg>${uname_values['invalid']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:57:14.391" level="INFO">Typing text 'cl&amp;&amp;' into text field 'xpath=//input[starts-with(@name,"username")]'.</msg>
+<status status="PASS" starttime="20240115 14:57:14.391" endtime="20240115 14:57:14.478"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:14.390" endtime="20240115 14:57:14.478"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:57:14.480" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:57:14.480" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:57:14.480" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:57:14.479" endtime="20240115 14:57:14.496"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:14.478" endtime="20240115 14:57:14.496"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${username_labels}[2]</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:57:14.534" level="INFO">Current page contains text 'NO special characters allowed (!%*@$)'.</msg>
+<status status="PASS" starttime="20240115 14:57:14.498" endtime="20240115 14:57:14.534"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:14.497" endtime="20240115 14:57:14.534"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:57:17.544" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:57:14.535" endtime="20240115 14:57:17.544"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:14.535" endtime="20240115 14:57:17.544"/>
+</kw>
+<kw name="ClearTextBox" library="PageObjects">
+<arg>${usernameField}</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${clearElement}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20240115 14:57:17.545" endtime="20240115 14:57:17.578"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:17.544" endtime="20240115 14:57:17.579"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:57:20.588" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:57:17.580" endtime="20240115 14:57:20.588"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:17.579" endtime="20240115 14:57:20.588"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${usernameField}</arg>
+<arg>${uname_values['valid']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:57:20.590" level="INFO">Typing text 'AutomationTest123' into text field 'xpath=//input[starts-with(@name,"username")]'.</msg>
+<status status="PASS" starttime="20240115 14:57:20.589" endtime="20240115 14:57:20.687"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:20.589" endtime="20240115 14:57:20.688"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:57:20.691" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:57:20.691" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:57:20.691" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:57:20.690" endtime="20240115 14:57:20.709"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:20.689" endtime="20240115 14:57:20.710"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:57:23.718" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:57:20.711" endtime="20240115 14:57:23.718"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:20.710" endtime="20240115 14:57:23.718"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${calenderFirstElement}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:57:23.719" level="INFO">Clicking element 'xpath=//tbody/tr[2]/td[2]/button[1]/span[1]'.</msg>
+<status status="PASS" starttime="20240115 14:57:23.719" endtime="20240115 14:57:23.781"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:23.718" endtime="20240115 14:57:23.781"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${emailField}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:57:23.786" level="INFO">Clicking element 'xpath=//input[starts-with(@name,"email")]'.</msg>
+<status status="PASS" starttime="20240115 14:57:23.784" endtime="20240115 14:57:23.921"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:23.783" endtime="20240115 14:57:23.921"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:57:23.922" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:57:23.922" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:57:23.922" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:57:23.922" endtime="20240115 14:57:23.953"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:23.921" endtime="20240115 14:57:23.953"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${email['required']}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:57:23.983" level="INFO">Current page contains text 'This field is required'.</msg>
+<status status="PASS" starttime="20240115 14:57:23.955" endtime="20240115 14:57:23.983"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:23.954" endtime="20240115 14:57:23.983"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:57:26.992" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:57:23.984" endtime="20240115 14:57:26.992"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:23.984" endtime="20240115 14:57:26.992"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${emailField}</arg>
+<arg>${email_values['invalidemail1']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:57:26.994" level="INFO">Typing text 'email.com' into text field 'xpath=//input[starts-with(@name,"email")]'.</msg>
+<status status="PASS" starttime="20240115 14:57:26.993" endtime="20240115 14:57:27.088"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:26.992" endtime="20240115 14:57:27.088"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:57:27.090" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:57:27.090" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:57:27.090" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:57:27.089" endtime="20240115 14:57:27.103"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:27.089" endtime="20240115 14:57:27.104"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${email['invalid']}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:57:27.133" level="INFO">Current page contains text 'Invalid email address'.</msg>
+<status status="PASS" starttime="20240115 14:57:27.105" endtime="20240115 14:57:27.133"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:27.104" endtime="20240115 14:57:27.133"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:57:30.151" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:57:27.136" endtime="20240115 14:57:30.151"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:27.135" endtime="20240115 14:57:30.151"/>
+</kw>
+<kw name="ClearTextBox" library="PageObjects">
+<arg>${emailField}</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${clearElement}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20240115 14:57:30.152" endtime="20240115 14:57:30.187"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:30.152" endtime="20240115 14:57:30.187"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${emailField}</arg>
+<arg>${email_values['invalidemail2']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:57:30.190" level="INFO">Typing text 'email@.com' into text field 'xpath=//input[starts-with(@name,"email")]'.</msg>
+<status status="PASS" starttime="20240115 14:57:30.189" endtime="20240115 14:57:30.298"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:30.187" endtime="20240115 14:57:30.298"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:57:30.300" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:57:30.300" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:57:30.300" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:57:30.299" endtime="20240115 14:57:30.321"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:30.299" endtime="20240115 14:57:30.321"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${email['invalid']}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:57:30.377" level="INFO">Current page contains text 'Invalid email address'.</msg>
+<status status="PASS" starttime="20240115 14:57:30.323" endtime="20240115 14:57:30.377"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:30.321" endtime="20240115 14:57:30.378"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:57:33.382" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:57:30.378" endtime="20240115 14:57:33.382"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:30.378" endtime="20240115 14:57:33.382"/>
+</kw>
+<kw name="ClearTextBox" library="PageObjects">
+<arg>${emailField}</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${clearElement}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20240115 14:57:33.382" endtime="20240115 14:57:33.430"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:33.382" endtime="20240115 14:57:33.430"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${emailField}</arg>
+<arg>${email_values['invalidemail3']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:57:33.433" level="INFO">Typing text 'email@com' into text field 'xpath=//input[starts-with(@name,"email")]'.</msg>
+<status status="PASS" starttime="20240115 14:57:33.433" endtime="20240115 14:57:33.544"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:33.431" endtime="20240115 14:57:33.544"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:57:33.545" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:57:33.545" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:57:33.545" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:57:33.544" endtime="20240115 14:57:33.558"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:33.544" endtime="20240115 14:57:33.558"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${email['invalid']}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:57:33.597" level="INFO">Current page contains text 'Invalid email address'.</msg>
+<status status="PASS" starttime="20240115 14:57:33.560" endtime="20240115 14:57:33.598"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:33.559" endtime="20240115 14:57:33.598"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:57:36.608" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:57:33.599" endtime="20240115 14:57:36.608"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:33.599" endtime="20240115 14:57:36.608"/>
+</kw>
+<kw name="ClearTextBox" library="PageObjects">
+<arg>${emailField}</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${clearElement}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20240115 14:57:36.609" endtime="20240115 14:57:36.643"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:36.609" endtime="20240115 14:57:36.644"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${emailField}</arg>
+<arg>${email_values['validemail']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:57:36.646" level="INFO">Typing text 'testautomation@email.com' into text field 'xpath=//input[starts-with(@name,"email")]'.</msg>
+<status status="PASS" starttime="20240115 14:57:36.645" endtime="20240115 14:57:36.769"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:36.644" endtime="20240115 14:57:36.769"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${passwordField}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:57:36.772" level="INFO">Clicking element 'xpath=//input[starts-with(@name, "password")]'.</msg>
+<status status="PASS" starttime="20240115 14:57:36.771" endtime="20240115 14:57:36.829"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:36.771" endtime="20240115 14:57:36.829"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:57:36.831" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:57:36.831" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:57:36.831" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:57:36.830" endtime="20240115 14:57:36.847"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:36.829" endtime="20240115 14:57:36.847"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${password['required']}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:57:36.872" level="INFO">Current page contains text 'This field is required'.</msg>
+<status status="PASS" starttime="20240115 14:57:36.849" endtime="20240115 14:57:36.872"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:36.848" endtime="20240115 14:57:36.872"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:57:39.875" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:57:36.873" endtime="20240115 14:57:39.875"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:36.873" endtime="20240115 14:57:39.875"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${passwordField}</arg>
+<arg>${pword_values['invalid1']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:57:39.877" level="INFO">Typing text '1234abcd' into text field 'xpath=//input[starts-with(@name, "password")]'.</msg>
+<status status="PASS" starttime="20240115 14:57:39.876" endtime="20240115 14:57:39.956"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:39.876" endtime="20240115 14:57:39.956"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:57:39.959" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:57:39.959" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:57:39.960" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:57:39.957" endtime="20240115 14:57:39.982"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:39.957" endtime="20240115 14:57:39.982"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${password['uppercase']}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:57:40.006" level="INFO">Current page contains text 'Must contain at least 1 upper case character'.</msg>
+<status status="PASS" starttime="20240115 14:57:39.984" endtime="20240115 14:57:40.006"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:39.983" endtime="20240115 14:57:40.006"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:57:43.009" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:57:40.006" endtime="20240115 14:57:43.009"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:40.006" endtime="20240115 14:57:43.009"/>
+</kw>
+<kw name="ClearTextBox" library="PageObjects">
+<arg>${passwordField}</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${clearElement}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20240115 14:57:43.010" endtime="20240115 14:57:43.044"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:43.010" endtime="20240115 14:57:43.045"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${passwordField}</arg>
+<arg>${pword_values['invalid2']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:57:43.048" level="INFO">Typing text '1234abcD' into text field 'xpath=//input[starts-with(@name, "password")]'.</msg>
+<status status="PASS" starttime="20240115 14:57:43.047" endtime="20240115 14:57:43.141"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:43.046" endtime="20240115 14:57:43.141"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:57:43.144" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:57:43.144" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:57:43.144" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:57:43.143" endtime="20240115 14:57:43.165"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:43.143" endtime="20240115 14:57:43.165"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${password['specialchar']}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:57:43.191" level="INFO">Current page contains text 'Must contain at least 1 special character'.</msg>
+<status status="PASS" starttime="20240115 14:57:43.167" endtime="20240115 14:57:43.191"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:43.166" endtime="20240115 14:57:43.191"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:57:46.198" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:57:43.191" endtime="20240115 14:57:46.198"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:43.191" endtime="20240115 14:57:46.198"/>
+</kw>
+<kw name="ClearTextBox" library="PageObjects">
+<arg>${passwordField}</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${clearElement}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20240115 14:57:46.199" endtime="20240115 14:57:46.234"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:46.199" endtime="20240115 14:57:46.234"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${passwordField}</arg>
+<arg>${pword_values['invalid3']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:57:46.236" level="INFO">Typing text '1234abc!' into text field 'xpath=//input[starts-with(@name, "password")]'.</msg>
+<status status="PASS" starttime="20240115 14:57:46.236" endtime="20240115 14:57:46.328"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:46.234" endtime="20240115 14:57:46.328"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:57:46.329" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:57:46.329" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:57:46.329" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:57:46.328" endtime="20240115 14:57:46.349"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:46.328" endtime="20240115 14:57:46.349"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${password['uppercase']}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:57:46.371" level="INFO">Current page contains text 'Must contain at least 1 upper case character'.</msg>
+<status status="PASS" starttime="20240115 14:57:46.350" endtime="20240115 14:57:46.371"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:46.349" endtime="20240115 14:57:46.371"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:57:49.382" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:57:46.372" endtime="20240115 14:57:49.382"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:46.371" endtime="20240115 14:57:49.382"/>
+</kw>
+<kw name="ClearTextBox" library="PageObjects">
+<arg>${passwordField}</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${clearElement}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20240115 14:57:49.383" endtime="20240115 14:57:49.416"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:49.383" endtime="20240115 14:57:49.416"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${passwordField}</arg>
+<arg>${pword_values['invalid4']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:57:49.419" level="INFO">Typing text '1234aB!' into text field 'xpath=//input[starts-with(@name, "password")]'.</msg>
+<status status="PASS" starttime="20240115 14:57:49.418" endtime="20240115 14:57:49.513"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:49.417" endtime="20240115 14:57:49.513"/>
+</kw>
+<kw name="Press Tab" library="PageObjects">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20240115 14:57:49.514" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20240115 14:57:49.514" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20240115 14:57:49.514" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20240115 14:57:49.514" endtime="20240115 14:57:49.534"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:49.514" endtime="20240115 14:57:49.534"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${password['length']}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:57:49.561" level="INFO">Current page contains text 'Must be at least 8 characters'.</msg>
+<status status="PASS" starttime="20240115 14:57:49.536" endtime="20240115 14:57:49.562"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:49.535" endtime="20240115 14:57:49.562"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:57:52.575" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:57:49.562" endtime="20240115 14:57:52.575"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:49.562" endtime="20240115 14:57:52.575"/>
+</kw>
+<kw name="ClearTextBox" library="PageObjects">
+<arg>${passwordField}</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${clearElement}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20240115 14:57:52.576" endtime="20240115 14:57:52.611"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:52.576" endtime="20240115 14:57:52.611"/>
+</kw>
+<kw name="Typer" library="PageObjects">
+<arg>${passwordField}</arg>
+<arg>${pword_values['valid']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 14:57:52.614" level="INFO">Typing text '1234abC!' into text field 'xpath=//input[starts-with(@name, "password")]'.</msg>
+<status status="PASS" starttime="20240115 14:57:52.613" endtime="20240115 14:57:52.707"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:52.611" endtime="20240115 14:57:52.707"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:57:55.714" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:57:52.707" endtime="20240115 14:57:55.714"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:52.707" endtime="20240115 14:57:55.714"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${passwordMasking}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:57:55.716" level="INFO">Clicking element 'xpath=//body/app-root[1]/app-log-reg[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[2]/app-submit-form[1]/section[1]/form[1]/div[5]/div[1]/label[1]/div[1]/mat-form-field[1]/div[1]/div[1]/div[2]/span[1]/*[1]'.</msg>
+<status status="PASS" starttime="20240115 14:57:55.715" endtime="20240115 14:57:55.773"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:55.714" endtime="20240115 14:57:55.774"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:57:58.789" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:57:55.775" endtime="20240115 14:57:58.789"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:55.774" endtime="20240115 14:57:58.789"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${passwordMasking}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:57:58.790" level="INFO">Clicking element 'xpath=//body/app-root[1]/app-log-reg[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[2]/app-submit-form[1]/section[1]/form[1]/div[5]/div[1]/label[1]/div[1]/mat-form-field[1]/div[1]/div[1]/div[2]/span[1]/*[1]'.</msg>
+<status status="PASS" starttime="20240115 14:57:58.790" endtime="20240115 14:57:58.831"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:58.790" endtime="20240115 14:57:58.832"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${termsCondition}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:57:58.834" level="INFO">Clicking element 'xpath=//input[starts-with(@id, "mat-mdc-checkbox-1-input")]'.</msg>
+<status status="PASS" starttime="20240115 14:57:58.833" endtime="20240115 14:57:58.881"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:58.833" endtime="20240115 14:57:58.881"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${ageVerification}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:57:58.884" level="INFO">Clicking element 'xpath=//input[starts-with(@id, "mat-mdc-checkbox-2-input")]'.</msg>
+<status status="PASS" starttime="20240115 14:57:58.883" endtime="20240115 14:57:58.951"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:58.883" endtime="20240115 14:57:58.951"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${termsOfUseHyperlink}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:57:58.952" level="INFO">Clicking element 'xpath=//a[contains(text(),'Terms of Use')]'.</msg>
+<status status="PASS" starttime="20240115 14:57:58.952" endtime="20240115 14:57:59.026"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:58.951" endtime="20240115 14:57:59.026"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${termsOfUsePageContent}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:57:59.198" level="INFO">Current page contains text 'Terms of Use'.</msg>
+<status status="PASS" starttime="20240115 14:57:59.028" endtime="20240115 14:57:59.198"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:59.027" endtime="20240115 14:57:59.198"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:58:02.213" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:57:59.199" endtime="20240115 14:58:02.213"/>
+</kw>
+<status status="PASS" starttime="20240115 14:57:59.199" endtime="20240115 14:58:02.213"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${registerButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:58:02.214" level="INFO">Clicking element 'xpath=//a[contains(text(),'Sign up')]'.</msg>
+<status status="PASS" starttime="20240115 14:58:02.214" endtime="20240115 14:58:02.312"/>
+</kw>
+<status status="PASS" starttime="20240115 14:58:02.214" endtime="20240115 14:58:02.312"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:58:05.315" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:58:02.313" endtime="20240115 14:58:05.315"/>
+</kw>
+<status status="PASS" starttime="20240115 14:58:02.312" endtime="20240115 14:58:05.315"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${privacyPolicy}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:58:05.316" level="INFO">Clicking element 'xpath=//a[contains(text()," Privacy Policy")]'.</msg>
+<status status="PASS" starttime="20240115 14:58:05.316" endtime="20240115 14:58:05.424"/>
+</kw>
+<status status="PASS" starttime="20240115 14:58:05.315" endtime="20240115 14:58:05.424"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${termsOfUsePageContent}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:58:05.447" level="INFO">Current page contains text 'Terms of Use'.</msg>
+<status status="PASS" starttime="20240115 14:58:05.425" endtime="20240115 14:58:05.448"/>
+</kw>
+<status status="PASS" starttime="20240115 14:58:05.425" endtime="20240115 14:58:05.448"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:58:08.450" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:58:05.449" endtime="20240115 14:58:08.450"/>
+</kw>
+<status status="PASS" starttime="20240115 14:58:05.449" endtime="20240115 14:58:08.450"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${registerButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:58:08.451" level="INFO">Clicking element 'xpath=//a[contains(text(),'Sign up')]'.</msg>
+<status status="PASS" starttime="20240115 14:58:08.451" endtime="20240115 14:58:08.526"/>
+</kw>
+<status status="PASS" starttime="20240115 14:58:08.451" endtime="20240115 14:58:08.526"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:58:11.533" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:58:08.528" endtime="20240115 14:58:11.533"/>
+</kw>
+<status status="PASS" starttime="20240115 14:58:08.527" endtime="20240115 14:58:11.533"/>
+</kw>
+<kw name="Clicker" library="PageObjects">
+<arg>${alreadyRegistered}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 14:58:11.534" level="INFO">Clicking element 'xpath=//a[contains(text()," Already registered? Log in ")]'.</msg>
+<status status="PASS" starttime="20240115 14:58:11.534" endtime="20240115 14:58:11.608"/>
+</kw>
+<status status="PASS" starttime="20240115 14:58:11.534" endtime="20240115 14:58:11.608"/>
+</kw>
+<kw name="Verify PageContents" library="PageObjects">
+<arg>${loginPageContent}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 14:58:11.628" level="INFO">Current page contains text 'Login to letsplay.live'.</msg>
+<status status="PASS" starttime="20240115 14:58:11.608" endtime="20240115 14:58:11.628"/>
+</kw>
+<status status="PASS" starttime="20240115 14:58:11.608" endtime="20240115 14:58:11.629"/>
+</kw>
+<kw name="WaitTimer" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240115 14:58:14.643" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240115 14:58:11.629" endtime="20240115 14:58:14.643"/>
+</kw>
+<status status="PASS" starttime="20240115 14:58:11.629" endtime="20240115 14:58:14.643"/>
+</kw>
+<kw name="Test_End" library="setup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240115 14:58:14.644" endtime="20240115 14:58:21.009"/>
+</kw>
+<status status="PASS" starttime="20240115 14:58:14.644" endtime="20240115 14:58:21.009"/>
+</kw>
+<doc>This test case performs the whole registration procedure and validation in a consolidated manner</doc>
+<status status="PASS" starttime="20240115 14:55:23.618" endtime="20240115 14:58:21.010"/>
+</test>
+<status status="FAIL" starttime="20240115 14:47:50.606" endtime="20240115 14:58:21.011"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="12" fail="2" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Landing Login SignUp TestCases">Landing Login SignUp TestCases</stat>
+<stat pass="12" fail="2" skip="0" id="s1" name="Landing Login SignUp TestCases">Landing Login SignUp TestCases</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20240115 14:53:59.448" level="WARN">Keyword 'Get Element Attribute' found both from a custom library 'SeleniumLibrary' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Get Element Attribute' or 'XML.Get Element Attribute'.</msg>
+<msg timestamp="20240115 14:54:36.016" level="WARN">Keyword 'Get Element Attribute' found both from a custom library 'SeleniumLibrary' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Get Element Attribute' or 'XML.Get Element Attribute'.</msg>
 </errors>
 </robot>

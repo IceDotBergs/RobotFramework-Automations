@@ -23,3 +23,6 @@ ${dob_field}    required=This field is required
 ...    uppercase=Must contain at least 1 upper case character    
 ...    lowercase=Must contain at least 1 lower case character    
 ...    specialchar=Must contain at least 1 special character
+
+#Login page labels
+&{loginLabels}    accountMismatch=Incorrect email or password. Please try again.    fieldRequired=This field is required
