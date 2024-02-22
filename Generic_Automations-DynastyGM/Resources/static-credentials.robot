@@ -21,6 +21,6 @@
 
 #Login page credentials
 &{active_credentials}   
-...    validUsername=devmember3@mailinator.com    
-...    validPassword=Pass@123    
+...    validUsername=jcautomation@mailinator.com    
+...    validPassword=Ilovetoeat@12345    
 ...    invalidPassword=Pass@@123
