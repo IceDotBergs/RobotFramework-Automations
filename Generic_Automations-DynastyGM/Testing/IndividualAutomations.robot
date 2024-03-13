@@ -13,7 +13,7 @@ Test Teardown    setup.Test_End
 Hyperlink Redirections
     [Documentation]    This test case verifies that the Terms of Use, Privacy Policy and Already have an account redirects to correct pages
     setup.WaitTimer
-    PageObjects.Clicker    ${registerButton}
+    PageObjects.Clicker    ${registerButton}    
     setup.WaitTimer
     PageObjects.Clicker    ${termsOfUseHyperlink}
     setup.WaitTimer

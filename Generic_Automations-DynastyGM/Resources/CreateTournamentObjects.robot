@@ -5,7 +5,7 @@ Test Setup    TestStart
 Test Teardown    
 
 *** Variables ***
-${tournamentAutoCreds}    taEmail=tournamentautomationbot@mailinator.com    taPass=tournamentautomations@Dynasty2024
+&{tournamentAutoCreds}    taEmail=tournamentautomationbot@mailinator.com    taPass=tournamentautomations@Dynasty2024
 
 ${urls}    LDdev=https://dev.lightningdragon.gg/home    
 
@@ -18,6 +18,7 @@ ${AdvanceTournament}    xpath=//h2[contains(text(),'Advanced Tournament')]
 TestStart
     Open Browser    ${urls}    chrome
     Click Element    xpath=//a[contains(text(), " Log in ")]
+    Input Text    xpath=//input[contains(@name, "email")]    ${tournamentAutoCreds}
 
 
 *** Test Cases ***
