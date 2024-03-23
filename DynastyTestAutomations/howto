@@ -1,0 +1,7 @@
+###How to run the script
+
+Step 1: Open Terminal
+Step 2: cd into the folder containing the script
+Step 3: run "python -m robot <filename>.robot"
+Alternative Step 3: run "python -m robot --outputdir C:\Users\Dynas\OneDrive\Desktop\LD-TestAut\LandingPage-TC\LandingPageTC-LD\TestCase\LandingPageLogs <filename>.robot" 
+    where C:\Users\Dynas\OneDrive\Desktop\LD-TestAut\LandingPage-TC\LandingPageTC-LD\TestCase\LandingPageLogs is the path to a folder where logs will be stored
