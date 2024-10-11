@@ -1,0 +1,2008 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.11 on win32)" generated="20240906 15:17:49.389" rpa="false" schemaversion="4">
+<suite id="s1" name="loginTC" source="C:\Users\Dynas\OneDrive\Documents\GitHub\RobotFramework-Automations\DynastyTestAutomations\LD\TestCases\login\loginTC.robot">
+<test id="s1-t1" name="Verify Landing Page Accessability" line="14">
+<kw name="Test_Start" library="testSetup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240906 15:17:51.278" level="INFO">Opening browser 'chrome' to base url 'https://lightningdragon.gg/home'.</msg>
+<status status="PASS" starttime="20240906 15:17:51.277" endtime="20240906 15:18:18.464"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240906 15:18:18.464" endtime="20240906 15:18:18.566"/>
+</kw>
+<status status="PASS" starttime="20240906 15:17:51.269" endtime="20240906 15:18:18.566"/>
+</kw>
+<kw name="ImplicitWait" library="globalVariables">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240906 15:18:21.574" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240906 15:18:18.570" endtime="20240906 15:18:21.574"/>
+</kw>
+<status status="PASS" starttime="20240906 15:18:18.570" endtime="20240906 15:18:21.577"/>
+</kw>
+<kw name="Test_End" library="testSetup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240906 15:18:21.577" endtime="20240906 15:18:27.836"/>
+</kw>
+<status status="PASS" starttime="20240906 15:18:21.577" endtime="20240906 15:18:27.836"/>
+</kw>
+<doc>This verifies the accessibility of the landing page</doc>
+<status status="PASS" starttime="20240906 15:17:51.269" endtime="20240906 15:18:27.836"/>
+</test>
+<test id="s1-t2" name="Verify Login Page Accessability" line="19">
+<kw name="Test_Start" library="testSetup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240906 15:18:27.836" level="INFO">Opening browser 'chrome' to base url 'https://lightningdragon.gg/home'.</msg>
+<status status="PASS" starttime="20240906 15:18:27.836" endtime="20240906 15:18:44.928"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240906 15:18:44.928" endtime="20240906 15:18:45.019"/>
+</kw>
+<status status="PASS" starttime="20240906 15:18:27.836" endtime="20240906 15:18:45.019"/>
+</kw>
+<kw name="ImplicitWait" library="globalVariables">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240906 15:18:48.032" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240906 15:18:45.019" endtime="20240906 15:18:48.032"/>
+</kw>
+<status status="PASS" starttime="20240906 15:18:45.019" endtime="20240906 15:18:48.032"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:18:48.032" level="INFO">Clicking element 'xpath=//a[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20240906 15:18:48.032" endtime="20240906 15:18:48.171"/>
+</kw>
+<status status="PASS" starttime="20240906 15:18:48.032" endtime="20240906 15:18:48.171"/>
+</kw>
+<kw name="ImplicitWait" library="globalVariables">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240906 15:18:51.187" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240906 15:18:48.176" endtime="20240906 15:18:51.187"/>
+</kw>
+<status status="PASS" starttime="20240906 15:18:48.176" endtime="20240906 15:18:51.187"/>
+</kw>
+<kw name="Test_End" library="testSetup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240906 15:18:51.187" endtime="20240906 15:18:57.444"/>
+</kw>
+<status status="PASS" starttime="20240906 15:18:51.187" endtime="20240906 15:18:57.444"/>
+</kw>
+<doc>This verifies the accessibility of the login page</doc>
+<status status="PASS" starttime="20240906 15:18:27.836" endtime="20240906 15:18:57.447"/>
+</test>
+<test id="s1-t3" name="Valid email invalid pass" line="25">
+<kw name="Test_Start" library="testSetup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240906 15:18:57.447" level="INFO">Opening browser 'chrome' to base url 'https://lightningdragon.gg/home'.</msg>
+<status status="PASS" starttime="20240906 15:18:57.447" endtime="20240906 15:19:10.536"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240906 15:19:10.536" endtime="20240906 15:19:10.626"/>
+</kw>
+<status status="PASS" starttime="20240906 15:18:57.447" endtime="20240906 15:19:10.627"/>
+</kw>
+<kw name="ExplicitWait" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240906 15:19:10.628" endtime="20240906 15:19:11.168"/>
+</kw>
+<status status="PASS" starttime="20240906 15:19:10.627" endtime="20240906 15:19:11.168"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:19:11.176" level="INFO">Clicking element 'xpath=//a[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20240906 15:19:11.168" endtime="20240906 15:19:11.266"/>
+</kw>
+<status status="PASS" starttime="20240906 15:19:11.168" endtime="20240906 15:19:11.266"/>
+</kw>
+<kw name="ImplicitWait" library="globalVariables">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240906 15:19:14.269" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240906 15:19:11.266" endtime="20240906 15:19:14.269"/>
+</kw>
+<status status="PASS" starttime="20240906 15:19:11.266" endtime="20240906 15:19:14.269"/>
+</kw>
+<kw name="Typer" library="globalVariables">
+<arg>${emailField}</arg>
+<arg>${active_credentials['validUsername']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240906 15:19:14.269" level="INFO">Typing text 'jc@dynastygm.com' into text field 'xpath=//input[@type='email']'.</msg>
+<status status="PASS" starttime="20240906 15:19:14.269" endtime="20240906 15:19:14.479"/>
+</kw>
+<status status="PASS" starttime="20240906 15:19:14.269" endtime="20240906 15:19:14.479"/>
+</kw>
+<kw name="Typer" library="globalVariables">
+<arg>${passwordField}</arg>
+<arg>${active_credentials['invalidPassword']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240906 15:19:14.486" level="INFO">Typing text 'Pass@@123' into text field 'xpath=//input[starts-with(@name, "password")]'.</msg>
+<status status="PASS" starttime="20240906 15:19:14.479" endtime="20240906 15:19:14.666"/>
+</kw>
+<status status="PASS" starttime="20240906 15:19:14.479" endtime="20240906 15:19:14.666"/>
+</kw>
+<kw name="ExplicitWait" library="globalVariables">
+<arg>${loginButton2}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240906 15:19:14.666" endtime="20240906 15:19:14.706"/>
+</kw>
+<status status="PASS" starttime="20240906 15:19:14.666" endtime="20240906 15:19:14.706"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${loginButton2}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:19:14.713" level="INFO">Clicking element 'xpath=//span[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20240906 15:19:14.713" endtime="20240906 15:19:14.786"/>
+</kw>
+<status status="PASS" starttime="20240906 15:19:14.706" endtime="20240906 15:19:14.786"/>
+</kw>
+<kw name="Verify PageContents" library="globalVariables">
+<arg>${loginLabels['accountMismatch']}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240906 15:19:14.956" level="INFO">Current page contains text 'Incorrect email or password. Please try again.'.</msg>
+<status status="PASS" starttime="20240906 15:19:14.786" endtime="20240906 15:19:14.956"/>
+</kw>
+<status status="PASS" starttime="20240906 15:19:14.786" endtime="20240906 15:19:14.956"/>
+</kw>
+<kw name="Test_End" library="testSetup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240906 15:19:14.956" endtime="20240906 15:19:21.305"/>
+</kw>
+<status status="PASS" starttime="20240906 15:19:14.956" endtime="20240906 15:19:21.305"/>
+</kw>
+<doc>This verifies that a user with valid email but invalid pass cannot login to the page</doc>
+<status status="PASS" starttime="20240906 15:18:57.447" endtime="20240906 15:19:21.306"/>
+</test>
+<test id="s1-t4" name="Invalid email valid pass" line="36">
+<kw name="Test_Start" library="testSetup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240906 15:19:21.306" level="INFO">Opening browser 'chrome' to base url 'https://lightningdragon.gg/home'.</msg>
+<status status="PASS" starttime="20240906 15:19:21.306" endtime="20240906 15:19:35.651"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240906 15:19:35.656" endtime="20240906 15:19:35.758"/>
+</kw>
+<status status="PASS" starttime="20240906 15:19:21.306" endtime="20240906 15:19:35.758"/>
+</kw>
+<kw name="ExplicitWait" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240906 15:19:35.758" endtime="20240906 15:19:36.276"/>
+</kw>
+<status status="PASS" starttime="20240906 15:19:35.758" endtime="20240906 15:19:36.279"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:19:36.279" level="INFO">Clicking element 'xpath=//a[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20240906 15:19:36.279" endtime="20240906 15:19:36.377"/>
+</kw>
+<status status="PASS" starttime="20240906 15:19:36.279" endtime="20240906 15:19:36.377"/>
+</kw>
+<kw name="ImplicitWait" library="globalVariables">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240906 15:19:39.391" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240906 15:19:36.377" endtime="20240906 15:19:39.391"/>
+</kw>
+<status status="PASS" starttime="20240906 15:19:36.377" endtime="20240906 15:19:39.391"/>
+</kw>
+<kw name="Typer" library="globalVariables">
+<arg>${emailField}</arg>
+<arg>${active_credentials['invalidUsername']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240906 15:19:39.391" level="INFO">Typing text 'jc@hotmail.com' into text field 'xpath=//input[@type='email']'.</msg>
+<status status="PASS" starttime="20240906 15:19:39.391" endtime="20240906 15:19:39.603"/>
+</kw>
+<status status="PASS" starttime="20240906 15:19:39.391" endtime="20240906 15:19:39.603"/>
+</kw>
+<kw name="Typer" library="globalVariables">
+<arg>${passwordField}</arg>
+<arg>${active_credentials['validPassword']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240906 15:19:39.603" level="INFO">Typing text 'Dynasty@2023' into text field 'xpath=//input[starts-with(@name, "password")]'.</msg>
+<status status="PASS" starttime="20240906 15:19:39.603" endtime="20240906 15:19:39.806"/>
+</kw>
+<status status="PASS" starttime="20240906 15:19:39.603" endtime="20240906 15:19:39.806"/>
+</kw>
+<kw name="ExplicitWait" library="globalVariables">
+<arg>${loginButton2}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240906 15:19:39.806" endtime="20240906 15:19:39.856"/>
+</kw>
+<status status="PASS" starttime="20240906 15:19:39.806" endtime="20240906 15:19:39.856"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${loginButton2}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:19:39.863" level="INFO">Clicking element 'xpath=//span[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20240906 15:19:39.863" endtime="20240906 15:19:39.936"/>
+</kw>
+<status status="PASS" starttime="20240906 15:19:39.856" endtime="20240906 15:19:39.936"/>
+</kw>
+<kw name="Verify PageContents" library="globalVariables">
+<arg>${loginLabels['accountMismatch']}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240906 15:19:40.406" level="INFO">Current page contains text 'Incorrect email or password. Please try again.'.</msg>
+<status status="PASS" starttime="20240906 15:19:39.936" endtime="20240906 15:19:40.406"/>
+</kw>
+<status status="PASS" starttime="20240906 15:19:39.936" endtime="20240906 15:19:40.406"/>
+</kw>
+<kw name="Test_End" library="testSetup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240906 15:19:40.410" endtime="20240906 15:19:46.743"/>
+</kw>
+<status status="PASS" starttime="20240906 15:19:40.410" endtime="20240906 15:19:46.743"/>
+</kw>
+<doc>This verifies that a user with invalid email but valid pass cannot login to the page</doc>
+<status status="PASS" starttime="20240906 15:19:21.306" endtime="20240906 15:19:46.743"/>
+</test>
+<test id="s1-t5" name="Invalid email invalid pass" line="47">
+<kw name="Test_Start" library="testSetup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240906 15:19:46.747" level="INFO">Opening browser 'chrome' to base url 'https://lightningdragon.gg/home'.</msg>
+<status status="PASS" starttime="20240906 15:19:46.747" endtime="20240906 15:20:17.661"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240906 15:20:17.661" endtime="20240906 15:20:17.771"/>
+</kw>
+<status status="PASS" starttime="20240906 15:19:46.747" endtime="20240906 15:20:17.771"/>
+</kw>
+<kw name="ExplicitWait" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240906 15:20:17.773" endtime="20240906 15:20:18.467"/>
+</kw>
+<status status="PASS" starttime="20240906 15:20:17.772" endtime="20240906 15:20:18.467"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:20:18.467" level="INFO">Clicking element 'xpath=//a[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20240906 15:20:18.467" endtime="20240906 15:20:18.634"/>
+</kw>
+<status status="PASS" starttime="20240906 15:20:18.467" endtime="20240906 15:20:18.634"/>
+</kw>
+<kw name="ImplicitWait" library="globalVariables">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240906 15:20:21.636" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240906 15:20:18.636" endtime="20240906 15:20:21.636"/>
+</kw>
+<status status="PASS" starttime="20240906 15:20:18.634" endtime="20240906 15:20:21.636"/>
+</kw>
+<kw name="Typer" library="globalVariables">
+<arg>${emailField}</arg>
+<arg>${active_credentials['invalidUsername']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240906 15:20:21.638" level="INFO">Typing text 'jc@hotmail.com' into text field 'xpath=//input[@type='email']'.</msg>
+<status status="PASS" starttime="20240906 15:20:21.638" endtime="20240906 15:20:21.826"/>
+</kw>
+<status status="PASS" starttime="20240906 15:20:21.636" endtime="20240906 15:20:21.826"/>
+</kw>
+<kw name="Typer" library="globalVariables">
+<arg>${passwordField}</arg>
+<arg>${active_credentials['invalidPassword']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240906 15:20:21.826" level="INFO">Typing text 'Pass@@123' into text field 'xpath=//input[starts-with(@name, "password")]'.</msg>
+<status status="PASS" starttime="20240906 15:20:21.826" endtime="20240906 15:20:22.005"/>
+</kw>
+<status status="PASS" starttime="20240906 15:20:21.826" endtime="20240906 15:20:22.005"/>
+</kw>
+<kw name="ExplicitWait" library="globalVariables">
+<arg>${loginButton2}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240906 15:20:22.006" endtime="20240906 15:20:22.054"/>
+</kw>
+<status status="PASS" starttime="20240906 15:20:22.006" endtime="20240906 15:20:22.054"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${loginButton2}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:20:22.056" level="INFO">Clicking element 'xpath=//span[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20240906 15:20:22.056" endtime="20240906 15:20:22.136"/>
+</kw>
+<status status="PASS" starttime="20240906 15:20:22.056" endtime="20240906 15:20:22.144"/>
+</kw>
+<kw name="Verify PageContents" library="globalVariables">
+<arg>${loginLabels['accountMismatch']}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240906 15:20:22.331" level="INFO">Current page contains text 'Incorrect email or password. Please try again.'.</msg>
+<status status="PASS" starttime="20240906 15:20:22.146" endtime="20240906 15:20:22.331"/>
+</kw>
+<status status="PASS" starttime="20240906 15:20:22.146" endtime="20240906 15:20:22.331"/>
+</kw>
+<kw name="Test_End" library="testSetup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240906 15:20:22.336" endtime="20240906 15:20:28.588"/>
+</kw>
+<status status="PASS" starttime="20240906 15:20:22.336" endtime="20240906 15:20:28.588"/>
+</kw>
+<doc>This verifies that a user with invalid email and pass cannot login to the page</doc>
+<status status="PASS" starttime="20240906 15:19:46.747" endtime="20240906 15:20:28.588"/>
+</test>
+<test id="s1-t6" name="valid email and pass" line="58">
+<kw name="Test_Start" library="testSetup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240906 15:20:28.588" level="INFO">Opening browser 'chrome' to base url 'https://lightningdragon.gg/home'.</msg>
+<status status="PASS" starttime="20240906 15:20:28.588" endtime="20240906 15:20:52.782"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240906 15:20:52.782" endtime="20240906 15:20:52.866"/>
+</kw>
+<status status="PASS" starttime="20240906 15:20:28.588" endtime="20240906 15:20:52.866"/>
+</kw>
+<kw name="ExplicitWait" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240906 15:20:52.866" endtime="20240906 15:20:52.996"/>
+</kw>
+<status status="PASS" starttime="20240906 15:20:52.866" endtime="20240906 15:20:52.996"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:20:53.001" level="INFO">Clicking element 'xpath=//a[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20240906 15:20:52.999" endtime="20240906 15:20:53.528"/>
+</kw>
+<status status="PASS" starttime="20240906 15:20:52.997" endtime="20240906 15:20:53.528"/>
+</kw>
+<kw name="ImplicitWait" library="globalVariables">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240906 15:20:56.542" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240906 15:20:53.528" endtime="20240906 15:20:56.542"/>
+</kw>
+<status status="PASS" starttime="20240906 15:20:53.528" endtime="20240906 15:20:56.542"/>
+</kw>
+<kw name="Typer" library="globalVariables">
+<arg>${emailField}</arg>
+<arg>${active_credentials['validUsername']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240906 15:20:56.542" level="INFO">Typing text 'jc@dynastygm.com' into text field 'xpath=//input[@type='email']'.</msg>
+<status status="PASS" starttime="20240906 15:20:56.542" endtime="20240906 15:20:56.795"/>
+</kw>
+<status status="PASS" starttime="20240906 15:20:56.542" endtime="20240906 15:20:56.795"/>
+</kw>
+<kw name="Typer" library="globalVariables">
+<arg>${passwordField}</arg>
+<arg>${active_credentials['validPassword']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240906 15:20:56.796" level="INFO">Typing text 'Dynasty@2023' into text field 'xpath=//input[starts-with(@name, "password")]'.</msg>
+<status status="PASS" starttime="20240906 15:20:56.796" endtime="20240906 15:20:57.013"/>
+</kw>
+<status status="PASS" starttime="20240906 15:20:56.795" endtime="20240906 15:20:57.013"/>
+</kw>
+<kw name="ExplicitWait" library="globalVariables">
+<arg>${loginButton2}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240906 15:20:57.016" endtime="20240906 15:20:57.061"/>
+</kw>
+<status status="PASS" starttime="20240906 15:20:57.016" endtime="20240906 15:20:57.061"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${loginButton2}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:20:57.061" level="INFO">Clicking element 'xpath=//span[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20240906 15:20:57.061" endtime="20240906 15:20:57.146"/>
+</kw>
+<status status="PASS" starttime="20240906 15:20:57.061" endtime="20240906 15:20:57.146"/>
+</kw>
+<kw name="Verify PageNotContains" library="globalVariables">
+<arg>${loginLabels['accountMismatch']}</arg>
+<kw name="Page Should Not Contain Button" library="SeleniumLibrary">
+<arg>${pageShouldNotContain}</arg>
+<doc>Verifies button ``locator`` is not found from current page.</doc>
+<msg timestamp="20240906 15:20:57.178" level="INFO">Current page does not contain button 'Incorrect email or password. Please try again.'.</msg>
+<msg timestamp="20240906 15:20:57.196" level="INFO">Current page does not contain input 'Incorrect email or password. Please try again.'.</msg>
+<status status="PASS" starttime="20240906 15:20:57.146" endtime="20240906 15:20:57.196"/>
+</kw>
+<status status="PASS" starttime="20240906 15:20:57.146" endtime="20240906 15:20:57.196"/>
+</kw>
+<kw name="Test_End" library="testSetup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240906 15:20:57.203" endtime="20240906 15:21:03.547"/>
+</kw>
+<status status="PASS" starttime="20240906 15:20:57.203" endtime="20240906 15:21:03.547"/>
+</kw>
+<doc>This verifies that a user with invalid email and pass cannot login to the page</doc>
+<status status="PASS" starttime="20240906 15:20:28.588" endtime="20240906 15:21:03.547"/>
+</test>
+<test id="s1-t7" name="verify rememberme tickbox" line="69">
+<kw name="Test_Start" library="testSetup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240906 15:21:03.553" level="INFO">Opening browser 'chrome' to base url 'https://lightningdragon.gg/home'.</msg>
+<status status="PASS" starttime="20240906 15:21:03.547" endtime="20240906 15:21:18.257"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240906 15:21:18.257" endtime="20240906 15:21:18.346"/>
+</kw>
+<status status="PASS" starttime="20240906 15:21:03.547" endtime="20240906 15:21:18.346"/>
+</kw>
+<kw name="ExplicitWait" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240906 15:21:18.346" endtime="20240906 15:21:18.425"/>
+</kw>
+<status status="PASS" starttime="20240906 15:21:18.346" endtime="20240906 15:21:18.426"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:21:18.431" level="INFO">Clicking element 'xpath=//a[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20240906 15:21:18.429" endtime="20240906 15:21:18.958"/>
+</kw>
+<status status="PASS" starttime="20240906 15:21:18.427" endtime="20240906 15:21:18.958"/>
+</kw>
+<kw name="ImplicitWait" library="globalVariables">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240906 15:21:21.973" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240906 15:21:18.958" endtime="20240906 15:21:21.973"/>
+</kw>
+<status status="PASS" starttime="20240906 15:21:18.958" endtime="20240906 15:21:21.973"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${rememberMe}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:21:21.973" level="INFO">Clicking element 'xpath=//input[@id='mat-mdc-checkbox-1-input']'.</msg>
+<status status="PASS" starttime="20240906 15:21:21.973" endtime="20240906 15:21:22.056"/>
+</kw>
+<status status="PASS" starttime="20240906 15:21:21.973" endtime="20240906 15:21:22.056"/>
+</kw>
+<kw name="ExplicitWait" library="globalVariables">
+<arg>${rememberMe-checked}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240906 15:21:22.056" endtime="20240906 15:21:23.187"/>
+</kw>
+<status status="PASS" starttime="20240906 15:21:22.056" endtime="20240906 15:21:23.187"/>
+</kw>
+<kw name="Element Contains" library="globalVariables">
+<arg>${rememberMe-checked}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${elementContains}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240906 15:21:23.187" endtime="20240906 15:21:23.196"/>
+</kw>
+<status status="PASS" starttime="20240906 15:21:23.187" endtime="20240906 15:21:23.196"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${rememberMe}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:21:23.203" level="INFO">Clicking element 'xpath=//input[@id='mat-mdc-checkbox-1-input']'.</msg>
+<status status="PASS" starttime="20240906 15:21:23.203" endtime="20240906 15:21:23.262"/>
+</kw>
+<status status="PASS" starttime="20240906 15:21:23.203" endtime="20240906 15:21:23.262"/>
+</kw>
+<kw name="Verify PageNotContains" library="globalVariables">
+<arg>${rememberMe-checked}</arg>
+<kw name="Page Should Not Contain Button" library="SeleniumLibrary">
+<arg>${pageShouldNotContain}</arg>
+<doc>Verifies button ``locator`` is not found from current page.</doc>
+<msg timestamp="20240906 15:21:23.277" level="INFO">Current page does not contain button 'xpath=//input[contains(@class, "mdc-checkbox__native-control mdc-checkbox--selected")]'.</msg>
+<msg timestamp="20240906 15:21:23.286" level="INFO">Current page does not contain input 'xpath=//input[contains(@class, "mdc-checkbox__native-control mdc-checkbox--selected")]'.</msg>
+<status status="PASS" starttime="20240906 15:21:23.266" endtime="20240906 15:21:23.286"/>
+</kw>
+<status status="PASS" starttime="20240906 15:21:23.262" endtime="20240906 15:21:23.286"/>
+</kw>
+<kw name="Test_End" library="testSetup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240906 15:21:23.294" endtime="20240906 15:21:29.610"/>
+</kw>
+<status status="PASS" starttime="20240906 15:21:23.294" endtime="20240906 15:21:29.610"/>
+</kw>
+<doc>This verifies that the remember me checkbox can be tick/untick</doc>
+<status status="PASS" starttime="20240906 15:21:03.547" endtime="20240906 15:21:29.610"/>
+</test>
+<test id="s1-t8" name="verify forgot password redirection" line="80">
+<kw name="Test_Start" library="testSetup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240906 15:21:29.616" level="INFO">Opening browser 'chrome' to base url 'https://lightningdragon.gg/home'.</msg>
+<status status="PASS" starttime="20240906 15:21:29.610" endtime="20240906 15:21:44.491"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240906 15:21:44.491" endtime="20240906 15:21:44.571"/>
+</kw>
+<status status="PASS" starttime="20240906 15:21:29.610" endtime="20240906 15:21:44.571"/>
+</kw>
+<kw name="ExplicitWait" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240906 15:21:44.577" endtime="20240906 15:21:44.637"/>
+</kw>
+<status status="PASS" starttime="20240906 15:21:44.571" endtime="20240906 15:21:44.637"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:21:44.637" level="INFO">Clicking element 'xpath=//a[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20240906 15:21:44.637" endtime="20240906 15:21:45.085"/>
+</kw>
+<status status="PASS" starttime="20240906 15:21:44.637" endtime="20240906 15:21:45.086"/>
+</kw>
+<kw name="ImplicitWait" library="globalVariables">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240906 15:21:48.101" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240906 15:21:45.087" endtime="20240906 15:21:48.101"/>
+</kw>
+<status status="PASS" starttime="20240906 15:21:45.086" endtime="20240906 15:21:48.101"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${forgotPassword}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:21:48.101" level="INFO">Clicking element 'xpath=//a[contains(text(),'Forgot your password?')]'.</msg>
+<status status="PASS" starttime="20240906 15:21:48.101" endtime="20240906 15:21:48.199"/>
+</kw>
+<status status="PASS" starttime="20240906 15:21:48.101" endtime="20240906 15:21:48.199"/>
+</kw>
+<kw name="Verify PageContents" library="globalVariables">
+<arg>${forgotPasswordTitleLabel}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240906 15:21:48.359" level="INFO">Current page contains text 'Forgot your password?'.</msg>
+<status status="PASS" starttime="20240906 15:21:48.199" endtime="20240906 15:21:48.359"/>
+</kw>
+<status status="PASS" starttime="20240906 15:21:48.199" endtime="20240906 15:21:48.359"/>
+</kw>
+<kw name="Test_End" library="testSetup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240906 15:21:48.361" endtime="20240906 15:21:54.652"/>
+</kw>
+<status status="PASS" starttime="20240906 15:21:48.360" endtime="20240906 15:21:54.652"/>
+</kw>
+<doc>This verifies the redirection of forgot password hyperlink</doc>
+<status status="PASS" starttime="20240906 15:21:29.610" endtime="20240906 15:21:54.652"/>
+</test>
+<test id="s1-t9" name="dont have account redirection" line="88">
+<kw name="Test_Start" library="testSetup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240906 15:21:54.656" level="INFO">Opening browser 'chrome' to base url 'https://lightningdragon.gg/home'.</msg>
+<status status="PASS" starttime="20240906 15:21:54.656" endtime="20240906 15:22:11.369"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240906 15:22:11.369" endtime="20240906 15:22:11.464"/>
+</kw>
+<status status="PASS" starttime="20240906 15:21:54.656" endtime="20240906 15:22:11.464"/>
+</kw>
+<kw name="ExplicitWait" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240906 15:22:11.468" endtime="20240906 15:22:12.020"/>
+</kw>
+<status status="PASS" starttime="20240906 15:22:11.466" endtime="20240906 15:22:12.020"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:22:12.026" level="INFO">Clicking element 'xpath=//a[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20240906 15:22:12.026" endtime="20240906 15:22:12.143"/>
+</kw>
+<status status="PASS" starttime="20240906 15:22:12.026" endtime="20240906 15:22:12.143"/>
+</kw>
+<kw name="ImplicitWait" library="globalVariables">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240906 15:22:15.159" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240906 15:22:12.146" endtime="20240906 15:22:15.159"/>
+</kw>
+<status status="PASS" starttime="20240906 15:22:12.146" endtime="20240906 15:22:15.159"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${dontHaveAccount}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:22:15.159" level="INFO">Clicking element 'xpath=//a[contains(text(),'Don’t have an account? Register')]'.</msg>
+<status status="PASS" starttime="20240906 15:22:15.159" endtime="20240906 15:22:15.307"/>
+</kw>
+<status status="PASS" starttime="20240906 15:22:15.159" endtime="20240906 15:22:15.307"/>
+</kw>
+<kw name="Verify PageContents" library="globalVariables">
+<arg>${registerTitleLabel}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240906 15:22:15.478" level="INFO">Current page contains text 'Register with Lightning Dragon'.</msg>
+<status status="PASS" starttime="20240906 15:22:15.307" endtime="20240906 15:22:15.478"/>
+</kw>
+<status status="PASS" starttime="20240906 15:22:15.307" endtime="20240906 15:22:15.478"/>
+</kw>
+<kw name="Test_End" library="testSetup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240906 15:22:15.478" endtime="20240906 15:22:21.721"/>
+</kw>
+<status status="PASS" starttime="20240906 15:22:15.478" endtime="20240906 15:22:21.721"/>
+</kw>
+<doc>This verifies the redirection of the dont have an account yet hyperlink</doc>
+<status status="PASS" starttime="20240906 15:21:54.656" endtime="20240906 15:22:21.721"/>
+</test>
+<test id="s1-t10" name="forgot password invalid email" line="96">
+<kw name="Test_Start" library="testSetup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240906 15:22:21.730" level="INFO">Opening browser 'chrome' to base url 'https://lightningdragon.gg/home'.</msg>
+<status status="PASS" starttime="20240906 15:22:21.727" endtime="20240906 15:22:32.841"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240906 15:22:32.841" endtime="20240906 15:22:33.041"/>
+</kw>
+<status status="PASS" starttime="20240906 15:22:21.727" endtime="20240906 15:22:33.041"/>
+</kw>
+<kw name="ExplicitWait" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240906 15:22:33.044" endtime="20240906 15:22:33.426"/>
+</kw>
+<status status="PASS" starttime="20240906 15:22:33.043" endtime="20240906 15:22:33.426"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:22:33.431" level="INFO">Clicking element 'xpath=//a[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20240906 15:22:33.431" endtime="20240906 15:22:33.566"/>
+</kw>
+<status status="PASS" starttime="20240906 15:22:33.431" endtime="20240906 15:22:33.566"/>
+</kw>
+<kw name="ImplicitWait" library="globalVariables">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240906 15:22:36.575" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240906 15:22:33.570" endtime="20240906 15:22:36.575"/>
+</kw>
+<status status="PASS" starttime="20240906 15:22:33.566" endtime="20240906 15:22:36.575"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${forgotPassword}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:22:36.576" level="INFO">Clicking element 'xpath=//a[contains(text(),'Forgot your password?')]'.</msg>
+<status status="PASS" starttime="20240906 15:22:36.576" endtime="20240906 15:22:36.690"/>
+</kw>
+<status status="PASS" starttime="20240906 15:22:36.576" endtime="20240906 15:22:36.690"/>
+</kw>
+<kw name="Verify PageContents" library="globalVariables">
+<arg>${forgotPasswordTitleLabel}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240906 15:22:36.853" level="INFO">Current page contains text 'Forgot your password?'.</msg>
+<status status="PASS" starttime="20240906 15:22:36.690" endtime="20240906 15:22:36.853"/>
+</kw>
+<status status="PASS" starttime="20240906 15:22:36.690" endtime="20240906 15:22:36.853"/>
+</kw>
+<kw name="Typer" library="globalVariables">
+<arg>${emailField}</arg>
+<arg>${active_credentials['invalidUsername']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240906 15:22:36.856" level="INFO">Typing text 'jc@hotmail.com' into text field 'xpath=//input[@type='email']'.</msg>
+<status status="PASS" starttime="20240906 15:22:36.856" endtime="20240906 15:22:37.073"/>
+</kw>
+<status status="PASS" starttime="20240906 15:22:36.853" endtime="20240906 15:22:37.073"/>
+</kw>
+<kw name="ExplicitWait" library="globalVariables">
+<arg>${nextButton}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240906 15:22:37.076" endtime="20240906 15:22:37.127"/>
+</kw>
+<status status="PASS" starttime="20240906 15:22:37.073" endtime="20240906 15:22:37.127"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${nextButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:22:37.127" level="INFO">Clicking element 'xpath=//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20240906 15:22:37.127" endtime="20240906 15:22:37.206"/>
+</kw>
+<status status="PASS" starttime="20240906 15:22:37.127" endtime="20240906 15:22:37.206"/>
+</kw>
+<kw name="ImplicitWait" library="globalVariables">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240906 15:22:40.215" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240906 15:22:37.206" endtime="20240906 15:22:40.215"/>
+</kw>
+<status status="PASS" starttime="20240906 15:22:37.206" endtime="20240906 15:22:40.215"/>
+</kw>
+<kw name="Verify PageContents" library="globalVariables">
+<arg>${invalidEmail}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240906 15:22:40.354" level="INFO">Current page contains text 'Email address not found'.</msg>
+<status status="PASS" starttime="20240906 15:22:40.216" endtime="20240906 15:22:40.356"/>
+</kw>
+<status status="PASS" starttime="20240906 15:22:40.216" endtime="20240906 15:22:40.356"/>
+</kw>
+<kw name="Test_End" library="testSetup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240906 15:22:40.356" endtime="20240906 15:22:46.641"/>
+</kw>
+<status status="PASS" starttime="20240906 15:22:40.356" endtime="20240906 15:22:46.641"/>
+</kw>
+<doc>This verifies that an invalid email will not send an OTP</doc>
+<status status="PASS" starttime="20240906 15:22:21.727" endtime="20240906 15:22:46.641"/>
+</test>
+<test id="s1-t11" name="forgot password valid email" line="109">
+<kw name="Test_Start" library="testSetup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240906 15:22:46.650" level="INFO">Opening browser 'chrome' to base url 'https://lightningdragon.gg/home'.</msg>
+<status status="PASS" starttime="20240906 15:22:46.647" endtime="20240906 15:23:00.792"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240906 15:23:00.792" endtime="20240906 15:23:00.872"/>
+</kw>
+<status status="PASS" starttime="20240906 15:22:46.647" endtime="20240906 15:23:00.872"/>
+</kw>
+<kw name="ExplicitWait" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240906 15:23:00.876" endtime="20240906 15:23:00.984"/>
+</kw>
+<status status="PASS" starttime="20240906 15:23:00.876" endtime="20240906 15:23:00.984"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:23:00.987" level="INFO">Clicking element 'xpath=//a[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20240906 15:23:00.986" endtime="20240906 15:23:01.486"/>
+</kw>
+<status status="PASS" starttime="20240906 15:23:00.985" endtime="20240906 15:23:01.487"/>
+</kw>
+<kw name="ImplicitWait" library="globalVariables">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240906 15:23:04.495" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240906 15:23:01.487" endtime="20240906 15:23:04.495"/>
+</kw>
+<status status="PASS" starttime="20240906 15:23:01.487" endtime="20240906 15:23:04.495"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${forgotPassword}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:23:04.496" level="INFO">Clicking element 'xpath=//a[contains(text(),'Forgot your password?')]'.</msg>
+<status status="PASS" starttime="20240906 15:23:04.496" endtime="20240906 15:23:04.594"/>
+</kw>
+<status status="PASS" starttime="20240906 15:23:04.496" endtime="20240906 15:23:04.594"/>
+</kw>
+<kw name="Verify PageContents" library="globalVariables">
+<arg>${forgotPasswordTitleLabel}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240906 15:23:04.743" level="INFO">Current page contains text 'Forgot your password?'.</msg>
+<status status="PASS" starttime="20240906 15:23:04.594" endtime="20240906 15:23:04.743"/>
+</kw>
+<status status="PASS" starttime="20240906 15:23:04.594" endtime="20240906 15:23:04.743"/>
+</kw>
+<kw name="Typer" library="globalVariables">
+<arg>${emailField}</arg>
+<arg>${active_credentials['validUsername']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240906 15:23:04.746" level="INFO">Typing text 'jc@dynastygm.com' into text field 'xpath=//input[@type='email']'.</msg>
+<status status="PASS" starttime="20240906 15:23:04.743" endtime="20240906 15:23:04.986"/>
+</kw>
+<status status="PASS" starttime="20240906 15:23:04.743" endtime="20240906 15:23:04.986"/>
+</kw>
+<kw name="ExplicitWait" library="globalVariables">
+<arg>${nextButton}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240906 15:23:04.986" endtime="20240906 15:23:05.043"/>
+</kw>
+<status status="PASS" starttime="20240906 15:23:04.986" endtime="20240906 15:23:05.043"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${nextButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:23:05.043" level="INFO">Clicking element 'xpath=//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20240906 15:23:05.043" endtime="20240906 15:23:05.122"/>
+</kw>
+<status status="PASS" starttime="20240906 15:23:05.043" endtime="20240906 15:23:05.122"/>
+</kw>
+<kw name="ImplicitWait" library="globalVariables">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240906 15:23:08.134" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240906 15:23:05.126" endtime="20240906 15:23:08.134"/>
+</kw>
+<status status="PASS" starttime="20240906 15:23:05.126" endtime="20240906 15:23:08.134"/>
+</kw>
+<kw name="Verify PageContents" library="globalVariables">
+<arg>${forgotpasswordSuccess}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240906 15:23:08.263" level="INFO">Current page contains text 'A six digit code has been sent to your email address.'.</msg>
+<status status="PASS" starttime="20240906 15:23:08.134" endtime="20240906 15:23:08.266"/>
+</kw>
+<status status="PASS" starttime="20240906 15:23:08.134" endtime="20240906 15:23:08.266"/>
+</kw>
+<kw name="ExplicitWait-longer" library="globalVariables">
+<arg>${verifyButtonEnabled}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<msg timestamp="20240906 15:23:25.741" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C960B5D2+29090]
+	(No symbol) [0x00007FF6C957E689]
+	(No symbol) [0x00007FF6C943B1CA]
+	(No symbol) [0x00007FF6C940FAF5]
+	(No symbol) [0x00007FF6C94BE2E7]
+	(No symbol) [0x00007FF6C94D5EE1]
+	(No symbol) [0x00007FF6C94B6493]
+	(No symbol) [0x00007FF6C94809B1]
+	(No symbol) [0x00007FF6C9481B11]
+	GetHandleVerifier [0x00007FF6C9928C5D+3295277]
+	GetHandleVerifier [0x00007FF6C9974843+3605523]
+	GetHandleVerifier [0x00007FF6C996A707+3564247]
+	GetHandleVerifier [0x00007FF6C96C6EB6+797318]
+	(No symbol) [0x00007FF6C958980F]
+	(No symbol) [0x00007FF6C95853F4]
+	(No symbol) [0x00007FF6C9585580]
+	(No symbol) [0x00007FF6C9574A1F]
+	BaseThreadInitThunk [0x00007FFB1BCC257D+29]
+	RtlUserThreadStart [0x00007FFB1C30AF28+40]
+</msg>
+<msg timestamp="20240906 15:23:25.751" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C960B5D2+29090]
+	(No symbol) [0x00007FF6C957E689]
+	(No symbol) [0x00007FF6C943B1CA]
+	(No symbol) [0x00007FF6C940FAF5]
+	(No symbol) [0x00007FF6C94BE2E7]
+	(No symbol) [0x00007FF6C94D5EE1]
+	(No symbol) [0x00007FF6C94B6493]
+	(No symbol) [0x00007FF6C94809B1]
+	(No symbol) [0x00007FF6C9481B11]
+	GetHandleVerifier [0x00007FF6C9928C5D+3295277]
+	GetHandleVerifier [0x00007FF6C9974843+3605523]
+	GetHandleVerifier [0x00007FF6C996A707+3564247]
+	GetHandleVerifier [0x00007FF6C96C6EB6+797318]
+	(No symbol) [0x00007FF6C958980F]
+	(No symbol) [0x00007FF6C95853F4]
+	(No symbol) [0x00007FF6C9585580]
+	(No symbol) [0x00007FF6C9574A1F]
+	BaseThreadInitThunk [0x00007FFB1BCC257D+29]
+	RtlUserThreadStart [0x00007FFB1C30AF28+40]
+</msg>
+<status status="FAIL" starttime="20240906 15:23:08.266" endtime="20240906 15:23:26.017"/>
+</kw>
+<status status="FAIL" starttime="20240906 15:23:08.266" endtime="20240906 15:23:26.017"/>
+</kw>
+<kw name="Test_End" library="testSetup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240906 15:23:26.026" endtime="20240906 15:23:28.156"/>
+</kw>
+<status status="PASS" starttime="20240906 15:23:26.026" endtime="20240906 15:23:28.156"/>
+</kw>
+<doc>This verifies that a valid email will receive an OTP, manual typing of OTP required</doc>
+<status status="FAIL" starttime="20240906 15:22:46.647" endtime="20240906 15:23:28.156">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C960B5D2+29090]
+	(No symbol) [0x00007FF6C957E689]
+	(No symbol) [0x00007FF6C943B1CA]
+	(No symbol) [0x00007FF6C940FAF5]
+	(No symbol) [0x00007FF6C94BE2E7]
+	(No symbol) [0x00007FF6C94D5EE1]
+	(No symbol) [0x00007FF6C94B6493]
+	(No symbol) [0x00007FF6C94809B1]
+	(No symbol) [0x00007FF6C9481B11]
+	GetHandleVerifier [0x00007FF6C9928C5D+3295277]
+	GetHandleVerifier [0x00007FF6C9974843+3605523]
+	GetHandleVerifier [0x00007FF6C996A707+3564247]
+	GetHandleVerifier [0x00007FF6C96C6EB6+797318]
+	(No symbol) [0x00007FF6C958980F]
+	(No symbol) [0x00007FF6C95853F4]
+	(No symbol) [0x00007FF6C9585580]
+	(No symbol) [0x00007FF6C9574A1F]
+	BaseThreadInitThunk [0x00007FFB1BCC257D+29]
+	RtlUserThreadStart [0x00007FFB1C30AF28+40]
+</status>
+</test>
+<test id="s1-t12" name="forgot password invalid otp" line="123">
+<kw name="Test_Start" library="testSetup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240906 15:23:28.165" level="INFO">Opening browser 'chrome' to base url 'https://lightningdragon.gg/home'.</msg>
+<status status="PASS" starttime="20240906 15:23:28.162" endtime="20240906 15:23:46.886"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240906 15:23:46.886" endtime="20240906 15:23:46.979"/>
+</kw>
+<status status="PASS" starttime="20240906 15:23:28.162" endtime="20240906 15:23:46.979"/>
+</kw>
+<kw name="ExplicitWait" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240906 15:23:46.981" endtime="20240906 15:23:47.046"/>
+</kw>
+<status status="PASS" starttime="20240906 15:23:46.980" endtime="20240906 15:23:47.047"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:23:47.050" level="INFO">Clicking element 'xpath=//a[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20240906 15:23:47.048" endtime="20240906 15:23:47.617"/>
+</kw>
+<status status="PASS" starttime="20240906 15:23:47.047" endtime="20240906 15:23:47.617"/>
+</kw>
+<kw name="ImplicitWait" library="globalVariables">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240906 15:23:50.626" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240906 15:23:47.625" endtime="20240906 15:23:50.626"/>
+</kw>
+<status status="PASS" starttime="20240906 15:23:47.617" endtime="20240906 15:23:50.626"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${forgotPassword}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:23:50.627" level="INFO">Clicking element 'xpath=//a[contains(text(),'Forgot your password?')]'.</msg>
+<status status="PASS" starttime="20240906 15:23:50.627" endtime="20240906 15:23:50.736"/>
+</kw>
+<status status="PASS" starttime="20240906 15:23:50.627" endtime="20240906 15:23:50.736"/>
+</kw>
+<kw name="Verify PageContents" library="globalVariables">
+<arg>${forgotPasswordTitleLabel}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240906 15:23:50.921" level="INFO">Current page contains text 'Forgot your password?'.</msg>
+<status status="PASS" starttime="20240906 15:23:50.736" endtime="20240906 15:23:50.921"/>
+</kw>
+<status status="PASS" starttime="20240906 15:23:50.736" endtime="20240906 15:23:50.921"/>
+</kw>
+<kw name="Typer" library="globalVariables">
+<arg>${emailField}</arg>
+<arg>${active_credentials['validUsername']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240906 15:23:50.926" level="INFO">Typing text 'jc@dynastygm.com' into text field 'xpath=//input[@type='email']'.</msg>
+<status status="PASS" starttime="20240906 15:23:50.926" endtime="20240906 15:23:51.144"/>
+</kw>
+<status status="PASS" starttime="20240906 15:23:50.921" endtime="20240906 15:23:51.144"/>
+</kw>
+<kw name="ExplicitWait" library="globalVariables">
+<arg>${nextButton}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240906 15:23:51.144" endtime="20240906 15:23:51.186"/>
+</kw>
+<status status="PASS" starttime="20240906 15:23:51.144" endtime="20240906 15:23:51.186"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${nextButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:23:51.193" level="INFO">Clicking element 'xpath=//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20240906 15:23:51.193" endtime="20240906 15:23:51.282"/>
+</kw>
+<status status="PASS" starttime="20240906 15:23:51.193" endtime="20240906 15:23:51.282"/>
+</kw>
+<kw name="ImplicitWait" library="globalVariables">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240906 15:23:54.289" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240906 15:23:51.286" endtime="20240906 15:23:54.289"/>
+</kw>
+<status status="PASS" starttime="20240906 15:23:51.286" endtime="20240906 15:23:54.289"/>
+</kw>
+<kw name="Verify PageContents" library="globalVariables">
+<arg>${forgotpasswordSuccess}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240906 15:23:54.428" level="INFO">Current page contains text 'A six digit code has been sent to your email address.'.</msg>
+<status status="PASS" starttime="20240906 15:23:54.289" endtime="20240906 15:23:54.428"/>
+</kw>
+<status status="PASS" starttime="20240906 15:23:54.289" endtime="20240906 15:23:54.428"/>
+</kw>
+<kw name="ExplicitWait-longer" library="globalVariables">
+<arg>${verifyButtonEnabled}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<msg timestamp="20240906 15:24:07.830" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C960B5D2+29090]
+	(No symbol) [0x00007FF6C957E689]
+	(No symbol) [0x00007FF6C943B1CA]
+	(No symbol) [0x00007FF6C940FAF5]
+	(No symbol) [0x00007FF6C94BE2E7]
+	(No symbol) [0x00007FF6C94D5EE1]
+	(No symbol) [0x00007FF6C94B6493]
+	(No symbol) [0x00007FF6C94809B1]
+	(No symbol) [0x00007FF6C9481B11]
+	GetHandleVerifier [0x00007FF6C9928C5D+3295277]
+	GetHandleVerifier [0x00007FF6C9974843+3605523]
+	GetHandleVerifier [0x00007FF6C996A707+3564247]
+	GetHandleVerifier [0x00007FF6C96C6EB6+797318]
+	(No symbol) [0x00007FF6C958980F]
+	(No symbol) [0x00007FF6C95853F4]
+	(No symbol) [0x00007FF6C9585580]
+	(No symbol) [0x00007FF6C9574A1F]
+	BaseThreadInitThunk [0x00007FFB1BCC257D+29]
+	RtlUserThreadStart [0x00007FFB1C30AF28+40]
+</msg>
+<msg timestamp="20240906 15:24:07.839" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C960B5D2+29090]
+	(No symbol) [0x00007FF6C957E689]
+	(No symbol) [0x00007FF6C943B1CA]
+	(No symbol) [0x00007FF6C940FAF5]
+	(No symbol) [0x00007FF6C94BE2E7]
+	(No symbol) [0x00007FF6C94D5EE1]
+	(No symbol) [0x00007FF6C94B6493]
+	(No symbol) [0x00007FF6C94809B1]
+	(No symbol) [0x00007FF6C9481B11]
+	GetHandleVerifier [0x00007FF6C9928C5D+3295277]
+	GetHandleVerifier [0x00007FF6C9974843+3605523]
+	GetHandleVerifier [0x00007FF6C996A707+3564247]
+	GetHandleVerifier [0x00007FF6C96C6EB6+797318]
+	(No symbol) [0x00007FF6C958980F]
+	(No symbol) [0x00007FF6C95853F4]
+	(No symbol) [0x00007FF6C9585580]
+	(No symbol) [0x00007FF6C9574A1F]
+	BaseThreadInitThunk [0x00007FFB1BCC257D+29]
+	RtlUserThreadStart [0x00007FFB1C30AF28+40]
+</msg>
+<status status="FAIL" starttime="20240906 15:23:54.428" endtime="20240906 15:24:07.839"/>
+</kw>
+<status status="FAIL" starttime="20240906 15:23:54.428" endtime="20240906 15:24:07.839"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${verifyButtonEnabled}</arg>
+<status status="NOT RUN" starttime="20240906 15:24:07.839" endtime="20240906 15:24:07.839"/>
+</kw>
+<kw name="ImplicitWait" library="globalVariables">
+<status status="NOT RUN" starttime="20240906 15:24:07.839" endtime="20240906 15:24:07.839"/>
+</kw>
+<kw name="Verify PageContents" library="globalVariables">
+<arg>${incorrectOTPlabel}</arg>
+<status status="NOT RUN" starttime="20240906 15:24:07.846" endtime="20240906 15:24:07.846"/>
+</kw>
+<kw name="Test_End" library="testSetup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240906 15:24:07.846" endtime="20240906 15:24:14.139"/>
+</kw>
+<status status="PASS" starttime="20240906 15:24:07.846" endtime="20240906 15:24:14.139"/>
+</kw>
+<doc>This verifies that an incorrect OTP will prompt an error to the page</doc>
+<status status="FAIL" starttime="20240906 15:23:28.162" endtime="20240906 15:24:14.139">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C960B5D2+29090]
+	(No symbol) [0x00007FF6C957E689]
+	(No symbol) [0x00007FF6C943B1CA]
+	(No symbol) [0x00007FF6C940FAF5]
+	(No symbol) [0x00007FF6C94BE2E7]
+	(No symbol) [0x00007FF6C94D5EE1]
+	(No symbol) [0x00007FF6C94B6493]
+	(No symbol) [0x00007FF6C94809B1]
+	(No symbol) [0x00007FF6C9481B11]
+	GetHandleVerifier [0x00007FF6C9928C5D+3295277]
+	GetHandleVerifier [0x00007FF6C9974843+3605523]
+	GetHandleVerifier [0x00007FF6C996A707+3564247]
+	GetHandleVerifier [0x00007FF6C96C6EB6+797318]
+	(No symbol) [0x00007FF6C958980F]
+	(No symbol) [0x00007FF6C95853F4]
+	(No symbol) [0x00007FF6C9585580]
+	(No symbol) [0x00007FF6C9574A1F]
+	BaseThreadInitThunk [0x00007FFB1BCC257D+29]
+	RtlUserThreadStart [0x00007FFB1C30AF28+40]
+</status>
+</test>
+<test id="s1-t13" name="forgot password valid otp" line="140">
+<kw name="Test_Start" library="testSetup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240906 15:24:14.146" level="INFO">Opening browser 'chrome' to base url 'https://lightningdragon.gg/home'.</msg>
+<status status="PASS" starttime="20240906 15:24:14.146" endtime="20240906 15:24:29.166"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240906 15:24:29.166" endtime="20240906 15:24:29.251"/>
+</kw>
+<status status="PASS" starttime="20240906 15:24:14.139" endtime="20240906 15:24:29.251"/>
+</kw>
+<kw name="ExplicitWait" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240906 15:24:29.254" endtime="20240906 15:24:29.663"/>
+</kw>
+<status status="PASS" starttime="20240906 15:24:29.252" endtime="20240906 15:24:29.663"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:24:29.663" level="INFO">Clicking element 'xpath=//a[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20240906 15:24:29.663" endtime="20240906 15:24:29.907"/>
+</kw>
+<status status="PASS" starttime="20240906 15:24:29.663" endtime="20240906 15:24:29.907"/>
+</kw>
+<kw name="ImplicitWait" library="globalVariables">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240906 15:24:32.911" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240906 15:24:29.907" endtime="20240906 15:24:32.911"/>
+</kw>
+<status status="PASS" starttime="20240906 15:24:29.907" endtime="20240906 15:24:32.911"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${forgotPassword}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:24:32.911" level="INFO">Clicking element 'xpath=//a[contains(text(),'Forgot your password?')]'.</msg>
+<status status="PASS" starttime="20240906 15:24:32.911" endtime="20240906 15:24:33.046"/>
+</kw>
+<status status="PASS" starttime="20240906 15:24:32.911" endtime="20240906 15:24:33.046"/>
+</kw>
+<kw name="Verify PageContents" library="globalVariables">
+<arg>${forgotPasswordTitleLabel}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240906 15:24:33.236" level="INFO">Current page contains text 'Forgot your password?'.</msg>
+<status status="PASS" starttime="20240906 15:24:33.049" endtime="20240906 15:24:33.236"/>
+</kw>
+<status status="PASS" starttime="20240906 15:24:33.049" endtime="20240906 15:24:33.236"/>
+</kw>
+<kw name="Typer" library="globalVariables">
+<arg>${emailField}</arg>
+<arg>${active_credentials['validUsername']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240906 15:24:33.239" level="INFO">Typing text 'jc@dynastygm.com' into text field 'xpath=//input[@type='email']'.</msg>
+<status status="PASS" starttime="20240906 15:24:33.239" endtime="20240906 15:24:33.451"/>
+</kw>
+<status status="PASS" starttime="20240906 15:24:33.236" endtime="20240906 15:24:33.451"/>
+</kw>
+<kw name="ExplicitWait" library="globalVariables">
+<arg>${nextButton}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240906 15:24:33.456" endtime="20240906 15:24:33.496"/>
+</kw>
+<status status="PASS" starttime="20240906 15:24:33.456" endtime="20240906 15:24:33.496"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${nextButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:24:33.500" level="INFO">Clicking element 'xpath=//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20240906 15:24:33.500" endtime="20240906 15:24:33.576"/>
+</kw>
+<status status="PASS" starttime="20240906 15:24:33.496" endtime="20240906 15:24:33.576"/>
+</kw>
+<kw name="ImplicitWait" library="globalVariables">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240906 15:24:36.577" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240906 15:24:33.576" endtime="20240906 15:24:36.577"/>
+</kw>
+<status status="PASS" starttime="20240906 15:24:33.576" endtime="20240906 15:24:36.577"/>
+</kw>
+<kw name="Verify PageContents" library="globalVariables">
+<arg>${forgotpasswordSuccess}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240906 15:24:36.726" level="INFO">Current page contains text 'A six digit code has been sent to your email address.'.</msg>
+<status status="PASS" starttime="20240906 15:24:36.578" endtime="20240906 15:24:36.726"/>
+</kw>
+<status status="PASS" starttime="20240906 15:24:36.578" endtime="20240906 15:24:36.726"/>
+</kw>
+<kw name="ExplicitWait-longer" library="globalVariables">
+<arg>${verifyButtonEnabled}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<msg timestamp="20240906 15:25:06.887" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240906 15:25:06.887" level="FAIL">Element 'xpath=//body/app-root[1]/app-log-reg[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[2]/app-verification-form[1]/div[1]/div[4]/button[1]' was not enabled in 30 seconds.</msg>
+<status status="FAIL" starttime="20240906 15:24:36.726" endtime="20240906 15:25:06.887"/>
+</kw>
+<status status="FAIL" starttime="20240906 15:24:36.726" endtime="20240906 15:25:06.887"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${verifyButtonEnabled}</arg>
+<status status="NOT RUN" starttime="20240906 15:25:06.887" endtime="20240906 15:25:06.887"/>
+</kw>
+<kw name="ImplicitWait" library="globalVariables">
+<status status="NOT RUN" starttime="20240906 15:25:06.887" endtime="20240906 15:25:06.887"/>
+</kw>
+<kw name="Verify PageContents" library="globalVariables">
+<arg>${correctOTPchangePassEnabled}</arg>
+<status status="NOT RUN" starttime="20240906 15:25:06.887" endtime="20240906 15:25:06.887"/>
+</kw>
+<kw name="Test_End" library="testSetup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240906 15:25:06.887" endtime="20240906 15:25:13.209"/>
+</kw>
+<status status="PASS" starttime="20240906 15:25:06.887" endtime="20240906 15:25:13.209"/>
+</kw>
+<doc>This verifies that the correct otp entered will show the change password hidden screen</doc>
+<status status="FAIL" starttime="20240906 15:24:14.139" endtime="20240906 15:25:13.209">Element 'xpath=//body/app-root[1]/app-log-reg[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[2]/app-verification-form[1]/div[1]/div[4]/button[1]' was not enabled in 30 seconds.</status>
+</test>
+<test id="s1-t14" name="otp expire" line="157">
+<kw name="Test_Start" library="testSetup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240906 15:25:13.217" level="INFO">Opening browser 'chrome' to base url 'https://lightningdragon.gg/home'.</msg>
+<status status="PASS" starttime="20240906 15:25:13.216" endtime="20240906 15:25:41.336"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240906 15:25:41.336" endtime="20240906 15:25:41.446"/>
+</kw>
+<status status="PASS" starttime="20240906 15:25:13.216" endtime="20240906 15:25:41.446"/>
+</kw>
+<kw name="ExplicitWait" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240906 15:25:41.448" endtime="20240906 15:25:41.971"/>
+</kw>
+<status status="PASS" starttime="20240906 15:25:41.447" endtime="20240906 15:25:41.971"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:25:41.976" level="INFO">Clicking element 'xpath=//a[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20240906 15:25:41.976" endtime="20240906 15:25:42.068"/>
+</kw>
+<status status="PASS" starttime="20240906 15:25:41.976" endtime="20240906 15:25:42.071"/>
+</kw>
+<kw name="ImplicitWait" library="globalVariables">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240906 15:25:45.081" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240906 15:25:42.071" endtime="20240906 15:25:45.081"/>
+</kw>
+<status status="PASS" starttime="20240906 15:25:42.071" endtime="20240906 15:25:45.081"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${forgotPassword}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:25:45.081" level="INFO">Clicking element 'xpath=//a[contains(text(),'Forgot your password?')]'.</msg>
+<status status="PASS" starttime="20240906 15:25:45.081" endtime="20240906 15:25:45.187"/>
+</kw>
+<status status="PASS" starttime="20240906 15:25:45.081" endtime="20240906 15:25:45.187"/>
+</kw>
+<kw name="Verify PageContents" library="globalVariables">
+<arg>${forgotPasswordTitleLabel}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240906 15:25:45.406" level="INFO">Current page contains text 'Forgot your password?'.</msg>
+<status status="PASS" starttime="20240906 15:25:45.187" endtime="20240906 15:25:45.406"/>
+</kw>
+<status status="PASS" starttime="20240906 15:25:45.187" endtime="20240906 15:25:45.406"/>
+</kw>
+<kw name="Typer" library="globalVariables">
+<arg>${emailField}</arg>
+<arg>${active_credentials['validUsername']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240906 15:25:45.406" level="INFO">Typing text 'jc@dynastygm.com' into text field 'xpath=//input[@type='email']'.</msg>
+<status status="PASS" starttime="20240906 15:25:45.406" endtime="20240906 15:25:45.616"/>
+</kw>
+<status status="PASS" starttime="20240906 15:25:45.406" endtime="20240906 15:25:45.616"/>
+</kw>
+<kw name="ExplicitWait" library="globalVariables">
+<arg>${nextButton}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240906 15:25:45.616" endtime="20240906 15:25:45.666"/>
+</kw>
+<status status="PASS" starttime="20240906 15:25:45.616" endtime="20240906 15:25:45.666"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${nextButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:25:45.666" level="INFO">Clicking element 'xpath=//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20240906 15:25:45.666" endtime="20240906 15:25:45.747"/>
+</kw>
+<status status="PASS" starttime="20240906 15:25:45.666" endtime="20240906 15:25:45.747"/>
+</kw>
+<kw name="ImplicitWait" library="globalVariables">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240906 15:25:48.754" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240906 15:25:45.747" endtime="20240906 15:25:48.754"/>
+</kw>
+<status status="PASS" starttime="20240906 15:25:45.747" endtime="20240906 15:25:48.754"/>
+</kw>
+<kw name="Verify PageContents" library="globalVariables">
+<arg>${forgotpasswordSuccess}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240906 15:25:48.886" level="INFO">Current page contains text 'A six digit code has been sent to your email address.'.</msg>
+<status status="PASS" starttime="20240906 15:25:48.754" endtime="20240906 15:25:48.886"/>
+</kw>
+<status status="PASS" starttime="20240906 15:25:48.754" endtime="20240906 15:25:48.886"/>
+</kw>
+<kw name="implicitWait-OTPexpire" library="loginPO">
+<kw name="Sleep" library="BuiltIn">
+<arg>300s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240906 15:30:48.895" level="INFO">Slept 5 minutes</msg>
+<status status="PASS" starttime="20240906 15:25:48.890" endtime="20240906 15:30:48.895"/>
+</kw>
+<status status="PASS" starttime="20240906 15:25:48.886" endtime="20240906 15:30:48.895"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${resendOTP}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:30:48.897" level="INFO">Clicking element 'xpath=//a[contains(text(),'Resend OTP')]'.</msg>
+<msg timestamp="20240906 15:30:48.903" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C960B5D2+29090]
+	(No symbol) [0x00007FF6C957E689]
+	(No symbol) [0x00007FF6C943B1CA]
+	(No symbol) [0x00007FF6C940FAF5]
+	(No symbol) [0x00007FF6C94BE2E7]
+	(No symbol) [0x00007FF6C94D5EE1]
+	(No symbol) [0x00007FF6C94B6493]
+	(No symbol) [0x00007FF6C94809B1]
+	(No symbol) [0x00007FF6C9481B11]
+	GetHandleVerifier [0x00007FF6C9928C5D+3295277]
+	GetHandleVerifier [0x00007FF6C9974843+3605523]
+	GetHandleVerifier [0x00007FF6C996A707+3564247]
+	GetHandleVerifier [0x00007FF6C96C6EB6+797318]
+	(No symbol) [0x00007FF6C958980F]
+	(No symbol) [0x00007FF6C95853F4]
+	(No symbol) [0x00007FF6C9585580]
+	(No symbol) [0x00007FF6C9574A1F]
+	BaseThreadInitThunk [0x00007FFB1BCC257D+29]
+	RtlUserThreadStart [0x00007FFB1C30AF28+40]
+</msg>
+<msg timestamp="20240906 15:30:48.906" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C960B5D2+29090]
+	(No symbol) [0x00007FF6C957E689]
+	(No symbol) [0x00007FF6C943B1CA]
+	(No symbol) [0x00007FF6C940FAF5]
+	(No symbol) [0x00007FF6C94BE2E7]
+	(No symbol) [0x00007FF6C94D5EE1]
+	(No symbol) [0x00007FF6C94B6493]
+	(No symbol) [0x00007FF6C94809B1]
+	(No symbol) [0x00007FF6C9481B11]
+	GetHandleVerifier [0x00007FF6C9928C5D+3295277]
+	GetHandleVerifier [0x00007FF6C9974843+3605523]
+	GetHandleVerifier [0x00007FF6C996A707+3564247]
+	GetHandleVerifier [0x00007FF6C96C6EB6+797318]
+	(No symbol) [0x00007FF6C958980F]
+	(No symbol) [0x00007FF6C95853F4]
+	(No symbol) [0x00007FF6C9585580]
+	(No symbol) [0x00007FF6C9574A1F]
+	BaseThreadInitThunk [0x00007FFB1BCC257D+29]
+	RtlUserThreadStart [0x00007FFB1C30AF28+40]
+</msg>
+<status status="FAIL" starttime="20240906 15:30:48.897" endtime="20240906 15:30:48.927"/>
+</kw>
+<status status="FAIL" starttime="20240906 15:30:48.897" endtime="20240906 15:30:48.927"/>
+</kw>
+<kw name="ExplicitWait-longer" library="globalVariables">
+<arg>${verifyButtonEnabled}</arg>
+<status status="NOT RUN" starttime="20240906 15:30:48.935" endtime="20240906 15:30:48.935"/>
+</kw>
+<kw name="Verify PageContents" library="globalVariables">
+<arg>${correctOTPchangePassEnabled}</arg>
+<status status="NOT RUN" starttime="20240906 15:30:48.937" endtime="20240906 15:30:48.937"/>
+</kw>
+<kw name="Test_End" library="testSetup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240906 15:30:48.937" endtime="20240906 15:30:51.038"/>
+</kw>
+<status status="PASS" starttime="20240906 15:30:48.937" endtime="20240906 15:30:51.038"/>
+</kw>
+<doc>This verifies that an incorrect OTP will prompt an error to the page, user should type in the correct OTP</doc>
+<status status="FAIL" starttime="20240906 15:25:13.209" endtime="20240906 15:30:51.038">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C960B5D2+29090]
+	(No symbol) [0x00007FF6C957E689]
+	(No symbol) [0x00007FF6C943B1CA]
+	(No symbol) [0x00007FF6C940FAF5]
+	(No symbol) [0x00007FF6C94BE2E7]
+	(No symbol) [0x00007FF6C94D5EE1]
+	(No symbol) [0x00007FF6C94B6493]
+	(No symbol) [0x00007FF6C94809B1]
+	(No symbol) [0x00007FF6C9481B11]
+	GetHandleVerifier [0x00007FF6C9928C5D+3295277]
+	GetHandleVerifier [0x00007FF6C9974843+3605523]
+	GetHandleVerifier [0x00007FF6C996A707+3564247]
+	GetHandleVerifier [0x00007FF6C96C6EB6+797318]
+	(No symbol) [0x00007FF6C958980F]
+	(No symbol) [0x00007FF6C95853F4]
+	(No symbol) [0x00007FF6C9585580]
+	(No symbol) [0x00007FF6C9574A1F]
+	BaseThreadInitThunk [0x00007FFB1BCC257D+29]
+	RtlUserThreadStart [0x00007FFB1C30AF28+40]
+</status>
+</test>
+<test id="s1-t15" name="otp resend" line="175">
+<kw name="Test_Start" library="testSetup" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url.${env}}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240906 15:30:51.046" level="INFO">Opening browser 'chrome' to base url 'https://lightningdragon.gg/home'.</msg>
+<status status="PASS" starttime="20240906 15:30:51.044" endtime="20240906 15:31:06.481"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240906 15:31:06.486" endtime="20240906 15:31:06.628"/>
+</kw>
+<status status="PASS" starttime="20240906 15:30:51.044" endtime="20240906 15:31:06.628"/>
+</kw>
+<kw name="ExplicitWait" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240906 15:31:06.628" endtime="20240906 15:31:07.172"/>
+</kw>
+<status status="PASS" starttime="20240906 15:31:06.628" endtime="20240906 15:31:07.172"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${loginButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:31:07.174" level="INFO">Clicking element 'xpath=//a[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20240906 15:31:07.174" endtime="20240906 15:31:07.418"/>
+</kw>
+<status status="PASS" starttime="20240906 15:31:07.172" endtime="20240906 15:31:07.418"/>
+</kw>
+<kw name="ImplicitWait" library="globalVariables">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240906 15:31:10.426" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240906 15:31:07.419" endtime="20240906 15:31:10.426"/>
+</kw>
+<status status="PASS" starttime="20240906 15:31:07.419" endtime="20240906 15:31:10.426"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${forgotPassword}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:31:10.426" level="INFO">Clicking element 'xpath=//a[contains(text(),'Forgot your password?')]'.</msg>
+<status status="PASS" starttime="20240906 15:31:10.426" endtime="20240906 15:31:10.549"/>
+</kw>
+<status status="PASS" starttime="20240906 15:31:10.426" endtime="20240906 15:31:10.549"/>
+</kw>
+<kw name="Verify PageContents" library="globalVariables">
+<arg>${forgotPasswordTitleLabel}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240906 15:31:10.687" level="INFO">Current page contains text 'Forgot your password?'.</msg>
+<status status="PASS" starttime="20240906 15:31:10.549" endtime="20240906 15:31:10.687"/>
+</kw>
+<status status="PASS" starttime="20240906 15:31:10.549" endtime="20240906 15:31:10.687"/>
+</kw>
+<kw name="Typer" library="globalVariables">
+<arg>${emailField}</arg>
+<arg>${active_credentials['validUsername']}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${targetElement}</arg>
+<arg>${typedWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240906 15:31:10.687" level="INFO">Typing text 'jc@dynastygm.com' into text field 'xpath=//input[@type='email']'.</msg>
+<status status="PASS" starttime="20240906 15:31:10.687" endtime="20240906 15:31:10.916"/>
+</kw>
+<status status="PASS" starttime="20240906 15:31:10.687" endtime="20240906 15:31:10.916"/>
+</kw>
+<kw name="ExplicitWait" library="globalVariables">
+<arg>${nextButton}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${elementToWait}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240906 15:31:10.916" endtime="20240906 15:31:10.964"/>
+</kw>
+<status status="PASS" starttime="20240906 15:31:10.916" endtime="20240906 15:31:10.964"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${nextButton}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:31:10.966" level="INFO">Clicking element 'xpath=//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20240906 15:31:10.966" endtime="20240906 15:31:11.029"/>
+</kw>
+<status status="PASS" starttime="20240906 15:31:10.964" endtime="20240906 15:31:11.029"/>
+</kw>
+<kw name="ImplicitWait" library="globalVariables">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240906 15:31:14.045" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240906 15:31:11.037" endtime="20240906 15:31:14.045"/>
+</kw>
+<status status="PASS" starttime="20240906 15:31:11.036" endtime="20240906 15:31:14.045"/>
+</kw>
+<kw name="Verify PageContents" library="globalVariables">
+<arg>${forgotpasswordSuccess}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pageShouldContain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240906 15:31:14.196" level="INFO">Current page contains text 'A six digit code has been sent to your email address.'.</msg>
+<status status="PASS" starttime="20240906 15:31:14.046" endtime="20240906 15:31:14.196"/>
+</kw>
+<status status="PASS" starttime="20240906 15:31:14.046" endtime="20240906 15:31:14.201"/>
+</kw>
+<kw name="implicitWait-OTPexpire" library="loginPO">
+<kw name="Sleep" library="BuiltIn">
+<arg>300s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240906 15:36:14.206" level="INFO">Slept 5 minutes</msg>
+<status status="PASS" starttime="20240906 15:31:14.201" endtime="20240906 15:36:14.206"/>
+</kw>
+<status status="PASS" starttime="20240906 15:31:14.201" endtime="20240906 15:36:14.206"/>
+</kw>
+<kw name="Clicker" library="globalVariables">
+<arg>${resendOTP}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clickElement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240906 15:36:14.208" level="INFO">Clicking element 'xpath=//a[contains(text(),'Resend OTP')]'.</msg>
+<msg timestamp="20240906 15:36:14.215" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C960B5D2+29090]
+	(No symbol) [0x00007FF6C957E689]
+	(No symbol) [0x00007FF6C943B1CA]
+	(No symbol) [0x00007FF6C940FAF5]
+	(No symbol) [0x00007FF6C94BE2E7]
+	(No symbol) [0x00007FF6C94D5EE1]
+	(No symbol) [0x00007FF6C94B6493]
+	(No symbol) [0x00007FF6C94809B1]
+	(No symbol) [0x00007FF6C9481B11]
+	GetHandleVerifier [0x00007FF6C9928C5D+3295277]
+	GetHandleVerifier [0x00007FF6C9974843+3605523]
+	GetHandleVerifier [0x00007FF6C996A707+3564247]
+	GetHandleVerifier [0x00007FF6C96C6EB6+797318]
+	(No symbol) [0x00007FF6C958980F]
+	(No symbol) [0x00007FF6C95853F4]
+	(No symbol) [0x00007FF6C9585580]
+	(No symbol) [0x00007FF6C9574A1F]
+	BaseThreadInitThunk [0x00007FFB1BCC257D+29]
+	RtlUserThreadStart [0x00007FFB1C30AF28+40]
+</msg>
+<msg timestamp="20240906 15:36:14.219" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C960B5D2+29090]
+	(No symbol) [0x00007FF6C957E689]
+	(No symbol) [0x00007FF6C943B1CA]
+	(No symbol) [0x00007FF6C940FAF5]
+	(No symbol) [0x00007FF6C94BE2E7]
+	(No symbol) [0x00007FF6C94D5EE1]
+	(No symbol) [0x00007FF6C94B6493]
+	(No symbol) [0x00007FF6C94809B1]
+	(No symbol) [0x00007FF6C9481B11]
+	GetHandleVerifier [0x00007FF6C9928C5D+3295277]
+	GetHandleVerifier [0x00007FF6C9974843+3605523]
+	GetHandleVerifier [0x00007FF6C996A707+3564247]
+	GetHandleVerifier [0x00007FF6C96C6EB6+797318]
+	(No symbol) [0x00007FF6C958980F]
+	(No symbol) [0x00007FF6C95853F4]
+	(No symbol) [0x00007FF6C9585580]
+	(No symbol) [0x00007FF6C9574A1F]
+	BaseThreadInitThunk [0x00007FFB1BCC257D+29]
+	RtlUserThreadStart [0x00007FFB1C30AF28+40]
+</msg>
+<status status="FAIL" starttime="20240906 15:36:14.207" endtime="20240906 15:36:14.220"/>
+</kw>
+<status status="FAIL" starttime="20240906 15:36:14.207" endtime="20240906 15:36:14.220"/>
+</kw>
+<kw name="ExplicitWait-longer" library="globalVariables">
+<arg>${verifyButtonEnabled}</arg>
+<status status="NOT RUN" starttime="20240906 15:36:14.220" endtime="20240906 15:36:14.220"/>
+</kw>
+<kw name="ImplicitWait" library="globalVariables">
+<status status="NOT RUN" starttime="20240906 15:36:14.220" endtime="20240906 15:36:14.220"/>
+</kw>
+<kw name="Verify PageContents" library="globalVariables">
+<arg>${correctOTPchangePassEnabled}</arg>
+<status status="NOT RUN" starttime="20240906 15:36:14.221" endtime="20240906 15:36:14.221"/>
+</kw>
+<kw name="Test_End" library="testSetup" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240906 15:36:14.221" endtime="20240906 15:36:16.297"/>
+</kw>
+<status status="PASS" starttime="20240906 15:36:14.221" endtime="20240906 15:36:16.297"/>
+</kw>
+<doc>This verifies that an incorrect OTP will prompt an error to the page, user should type in the correct OTP</doc>
+<status status="FAIL" starttime="20240906 15:30:51.044" endtime="20240906 15:36:16.298">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C960B5D2+29090]
+	(No symbol) [0x00007FF6C957E689]
+	(No symbol) [0x00007FF6C943B1CA]
+	(No symbol) [0x00007FF6C940FAF5]
+	(No symbol) [0x00007FF6C94BE2E7]
+	(No symbol) [0x00007FF6C94D5EE1]
+	(No symbol) [0x00007FF6C94B6493]
+	(No symbol) [0x00007FF6C94809B1]
+	(No symbol) [0x00007FF6C9481B11]
+	GetHandleVerifier [0x00007FF6C9928C5D+3295277]
+	GetHandleVerifier [0x00007FF6C9974843+3605523]
+	GetHandleVerifier [0x00007FF6C996A707+3564247]
+	GetHandleVerifier [0x00007FF6C96C6EB6+797318]
+	(No symbol) [0x00007FF6C958980F]
+	(No symbol) [0x00007FF6C95853F4]
+	(No symbol) [0x00007FF6C9585580]
+	(No symbol) [0x00007FF6C9574A1F]
+	BaseThreadInitThunk [0x00007FFB1BCC257D+29]
+	RtlUserThreadStart [0x00007FFB1C30AF28+40]
+</status>
+</test>
+<doc>This file will hold the test cases for login</doc>
+<status status="FAIL" starttime="20240906 15:17:49.389" endtime="20240906 15:36:16.308"/>
+</suite>
+<statistics>
+<total>
+<stat pass="10" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="10" fail="5" skip="0" id="s1" name="loginTC">loginTC</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240906 15:23:25.741" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C960B5D2+29090]
+	(No symbol) [0x00007FF6C957E689]
+	(No symbol) [0x00007FF6C943B1CA]
+	(No symbol) [0x00007FF6C940FAF5]
+	(No symbol) [0x00007FF6C94BE2E7]
+	(No symbol) [0x00007FF6C94D5EE1]
+	(No symbol) [0x00007FF6C94B6493]
+	(No symbol) [0x00007FF6C94809B1]
+	(No symbol) [0x00007FF6C9481B11]
+	GetHandleVerifier [0x00007FF6C9928C5D+3295277]
+	GetHandleVerifier [0x00007FF6C9974843+3605523]
+	GetHandleVerifier [0x00007FF6C996A707+3564247]
+	GetHandleVerifier [0x00007FF6C96C6EB6+797318]
+	(No symbol) [0x00007FF6C958980F]
+	(No symbol) [0x00007FF6C95853F4]
+	(No symbol) [0x00007FF6C9585580]
+	(No symbol) [0x00007FF6C9574A1F]
+	BaseThreadInitThunk [0x00007FFB1BCC257D+29]
+	RtlUserThreadStart [0x00007FFB1C30AF28+40]
+</msg>
+<msg timestamp="20240906 15:24:07.830" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C960B5D2+29090]
+	(No symbol) [0x00007FF6C957E689]
+	(No symbol) [0x00007FF6C943B1CA]
+	(No symbol) [0x00007FF6C940FAF5]
+	(No symbol) [0x00007FF6C94BE2E7]
+	(No symbol) [0x00007FF6C94D5EE1]
+	(No symbol) [0x00007FF6C94B6493]
+	(No symbol) [0x00007FF6C94809B1]
+	(No symbol) [0x00007FF6C9481B11]
+	GetHandleVerifier [0x00007FF6C9928C5D+3295277]
+	GetHandleVerifier [0x00007FF6C9974843+3605523]
+	GetHandleVerifier [0x00007FF6C996A707+3564247]
+	GetHandleVerifier [0x00007FF6C96C6EB6+797318]
+	(No symbol) [0x00007FF6C958980F]
+	(No symbol) [0x00007FF6C95853F4]
+	(No symbol) [0x00007FF6C9585580]
+	(No symbol) [0x00007FF6C9574A1F]
+	BaseThreadInitThunk [0x00007FFB1BCC257D+29]
+	RtlUserThreadStart [0x00007FFB1C30AF28+40]
+</msg>
+<msg timestamp="20240906 15:30:48.903" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C960B5D2+29090]
+	(No symbol) [0x00007FF6C957E689]
+	(No symbol) [0x00007FF6C943B1CA]
+	(No symbol) [0x00007FF6C940FAF5]
+	(No symbol) [0x00007FF6C94BE2E7]
+	(No symbol) [0x00007FF6C94D5EE1]
+	(No symbol) [0x00007FF6C94B6493]
+	(No symbol) [0x00007FF6C94809B1]
+	(No symbol) [0x00007FF6C9481B11]
+	GetHandleVerifier [0x00007FF6C9928C5D+3295277]
+	GetHandleVerifier [0x00007FF6C9974843+3605523]
+	GetHandleVerifier [0x00007FF6C996A707+3564247]
+	GetHandleVerifier [0x00007FF6C96C6EB6+797318]
+	(No symbol) [0x00007FF6C958980F]
+	(No symbol) [0x00007FF6C95853F4]
+	(No symbol) [0x00007FF6C9585580]
+	(No symbol) [0x00007FF6C9574A1F]
+	BaseThreadInitThunk [0x00007FFB1BCC257D+29]
+	RtlUserThreadStart [0x00007FFB1C30AF28+40]
+</msg>
+<msg timestamp="20240906 15:36:14.215" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.119)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C960B5D2+29090]
+	(No symbol) [0x00007FF6C957E689]
+	(No symbol) [0x00007FF6C943B1CA]
+	(No symbol) [0x00007FF6C940FAF5]
+	(No symbol) [0x00007FF6C94BE2E7]
+	(No symbol) [0x00007FF6C94D5EE1]
+	(No symbol) [0x00007FF6C94B6493]
+	(No symbol) [0x00007FF6C94809B1]
+	(No symbol) [0x00007FF6C9481B11]
+	GetHandleVerifier [0x00007FF6C9928C5D+3295277]
+	GetHandleVerifier [0x00007FF6C9974843+3605523]
+	GetHandleVerifier [0x00007FF6C996A707+3564247]
+	GetHandleVerifier [0x00007FF6C96C6EB6+797318]
+	(No symbol) [0x00007FF6C958980F]
+	(No symbol) [0x00007FF6C95853F4]
+	(No symbol) [0x00007FF6C9585580]
+	(No symbol) [0x00007FF6C9574A1F]
+	BaseThreadInitThunk [0x00007FFB1BCC257D+29]
+	RtlUserThreadStart [0x00007FFB1C30AF28+40]
+</msg>
+</errors>
+</robot>

@@ -19,7 +19,7 @@ Test Teardown    testSetup.Test_End
 
 ##Login test case coverage- 1. Valid email, invalid pass 2. invalid email, valid pass 3. invalid email and pass 4. valid email and pass
 *** Test Cases ***
-otp exprire
+otp expire
     [Documentation]    This verifies that an incorrect OTP will prompt an error to the page, user should type in the correct OTP
     globalVariables.ExplicitWait    ${loginButton}
     globalVariables.Clicker    ${loginButton}
