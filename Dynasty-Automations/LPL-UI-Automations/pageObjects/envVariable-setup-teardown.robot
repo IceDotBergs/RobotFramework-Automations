@@ -11,7 +11,7 @@ ${browser}    chrome
 
 #can be changed to prod but points to dev by default
 ${env}    dev
-${url}    dev=https://lpl.dynasty-dev.com/    prod=https://gg.letsplay.live/home
+&{url}    dev=https://lpl.dynasty-dev.com/    prod=https://gg.letsplay.live/home
 
 *** Keywords ***
 #To be always called when conducting test

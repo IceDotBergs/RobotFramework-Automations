@@ -5,13 +5,18 @@
 #this contains all label that can be found and can be used to validate the page
 &{LoginLabel}    loginTo=Login to letsplay.live    
 ...    header=Login
-...    disclaimer=We’ll never share your email with anyone else.
+...    disclaimer= We’ll never share your email with anyone else.
 ...    forgotPassword=Forgot your password?
 
-#Email hidden labels that show up
+#Login page hidden labels that show up
 &{loginHiddenLabels}    fieldRequired=This field is required    
 ...    invalidEmail=Invalid email address
 ...    invalidAccount=Incorrect email or password. Please try again.
+    
+
+#credentials that can be used
+&{userCreds}    validusername=member3@mailinator.com    validPass=Pass@123    
+...    invalidUsername=abc    invalidPass=Passsss
 
 #Input and interactive fields in the page
 ${emailInput}    xpath=//input[starts-with(@name,"email")]

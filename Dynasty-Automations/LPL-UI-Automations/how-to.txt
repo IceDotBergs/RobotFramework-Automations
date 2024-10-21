@@ -1,0 +1,17 @@
+How to execute test cases:
+
+1. Open the VS Command line
+2. Make sure that you are in the correct directory. You may use the CD command and paste the path of the test case you wish to execute.
+	ex. CD Desktop/Automations/LoginTC/
+3. Type in the commands in the Command List below:
+
+
+*****Command List*****
+
+to run a test case:
+python -m robot testcasename.robot
+	replace testcasename.robot with the correct test case name
+
+to run a test case and have its reports be saved on a specific folder:
+python -m robot --outputdir <path> testcasename.robot
+	replace path with an absolute path to the folder
